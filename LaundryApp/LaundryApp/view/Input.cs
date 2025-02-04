@@ -16,5 +16,10 @@ namespace LaundryApp.view
         {
             InitializeComponent();
         }
+
+        private void Input_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

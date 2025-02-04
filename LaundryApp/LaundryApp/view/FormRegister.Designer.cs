@@ -114,9 +114,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(62, 175);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Username";
+            this.label5.Text = "Email";
             // 
             // textBox2
             // 
@@ -147,7 +147,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::LaundryApp.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
