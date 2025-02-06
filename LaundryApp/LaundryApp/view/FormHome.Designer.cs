@@ -54,6 +54,7 @@
             this.buttonRegisterForm.TabIndex = 1;
             this.buttonRegisterForm.Text = "Register";
             this.buttonRegisterForm.UseVisualStyleBackColor = true;
+            this.buttonRegisterForm.Click += new System.EventHandler(this.buttonRegisterForm_Click);
             // 
             // buttonLoginForm
             // 
@@ -63,6 +64,7 @@
             this.buttonLoginForm.TabIndex = 2;
             this.buttonLoginForm.Text = "Login";
             this.buttonLoginForm.UseVisualStyleBackColor = true;
+            this.buttonLoginForm.Click += new System.EventHandler(this.buttonLoginForm_Click);
             // 
             // panel1
             // 

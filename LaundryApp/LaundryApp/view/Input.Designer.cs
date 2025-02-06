@@ -29,45 +29,47 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBoxMetodePembayaran = new System.Windows.Forms.ComboBox();
-            this.textBoxTanggalSelesai = new System.Windows.Forms.TextBox();
-            this.textBoxTanggalMasuk = new System.Windows.Forms.TextBox();
-            this.textBoxBeratTotal = new System.Windows.Forms.TextBox();
+            this.txtTotalHarga = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.chkHanger = new System.Windows.Forms.CheckBox();
+            this.chkSetrikaUap = new System.Windows.Forms.CheckBox();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.cmbJenisService = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lstJenisPakaian = new System.Windows.Forms.ListBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.txtBeratTotal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.listBoxJenisPakaian = new System.Windows.Forms.ListBox();
-            this.comboBoxNamaPelanggan = new System.Windows.Forms.ComboBox();
-            this.comboBoxJenisService = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.buttonReset = new System.Windows.Forms.Button();
-            this.checkBoxSetrikaUap = new System.Windows.Forms.CheckBox();
-            this.checkBoxHanger = new System.Windows.Forms.CheckBox();
-            this.textBoxTotalHarga = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.txtNamaPelanggan = new System.Windows.Forms.TextBox();
+            this.dtpTanggalMasuk = new System.Windows.Forms.DateTimePicker();
+            this.dtpTanggalSelesai = new System.Windows.Forms.DateTimePicker();
+            this.rdoCash = new System.Windows.Forms.RadioButton();
+            this.rdoTransfer = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBoxTotalHarga);
+            this.groupBox1.Controls.Add(this.rdoTransfer);
+            this.groupBox1.Controls.Add(this.rdoCash);
+            this.groupBox1.Controls.Add(this.dtpTanggalSelesai);
+            this.groupBox1.Controls.Add(this.dtpTanggalMasuk);
+            this.groupBox1.Controls.Add(this.txtNamaPelanggan);
+            this.groupBox1.Controls.Add(this.txtTotalHarga);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.checkBoxHanger);
-            this.groupBox1.Controls.Add(this.checkBoxSetrikaUap);
-            this.groupBox1.Controls.Add(this.buttonReset);
-            this.groupBox1.Controls.Add(this.comboBoxJenisService);
+            this.groupBox1.Controls.Add(this.chkHanger);
+            this.groupBox1.Controls.Add(this.chkSetrikaUap);
+            this.groupBox1.Controls.Add(this.btnReset);
+            this.groupBox1.Controls.Add(this.cmbJenisService);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.comboBoxNamaPelanggan);
-            this.groupBox1.Controls.Add(this.listBoxJenisPakaian);
-            this.groupBox1.Controls.Add(this.buttonAdd);
-            this.groupBox1.Controls.Add(this.comboBoxMetodePembayaran);
-            this.groupBox1.Controls.Add(this.textBoxTanggalSelesai);
-            this.groupBox1.Controls.Add(this.textBoxTanggalMasuk);
-            this.groupBox1.Controls.Add(this.textBoxBeratTotal);
+            this.groupBox1.Controls.Add(this.lstJenisPakaian);
+            this.groupBox1.Controls.Add(this.btnAdd);
+            this.groupBox1.Controls.Add(this.txtBeratTotal);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -81,34 +83,95 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Laundry";
             // 
-            // comboBoxMetodePembayaran
+            // txtTotalHarga
             // 
-            this.comboBoxMetodePembayaran.FormattingEnabled = true;
-            this.comboBoxMetodePembayaran.Location = new System.Drawing.Point(571, 164);
-            this.comboBoxMetodePembayaran.Name = "comboBoxMetodePembayaran";
-            this.comboBoxMetodePembayaran.Size = new System.Drawing.Size(191, 21);
-            this.comboBoxMetodePembayaran.TabIndex = 12;
+            this.txtTotalHarga.Location = new System.Drawing.Point(573, 260);
+            this.txtTotalHarga.Name = "txtTotalHarga";
+            this.txtTotalHarga.Size = new System.Drawing.Size(189, 20);
+            this.txtTotalHarga.TabIndex = 26;
             // 
-            // textBoxTanggalSelesai
+            // label8
             // 
-            this.textBoxTanggalSelesai.Location = new System.Drawing.Point(571, 118);
-            this.textBoxTanggalSelesai.Name = "textBoxTanggalSelesai";
-            this.textBoxTanggalSelesai.Size = new System.Drawing.Size(191, 20);
-            this.textBoxTanggalSelesai.TabIndex = 11;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(438, 263);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 13);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Total Harga";
             // 
-            // textBoxTanggalMasuk
+            // chkHanger
             // 
-            this.textBoxTanggalMasuk.Location = new System.Drawing.Point(571, 72);
-            this.textBoxTanggalMasuk.Name = "textBoxTanggalMasuk";
-            this.textBoxTanggalMasuk.Size = new System.Drawing.Size(191, 20);
-            this.textBoxTanggalMasuk.TabIndex = 10;
+            this.chkHanger.AutoSize = true;
+            this.chkHanger.Location = new System.Drawing.Point(527, 229);
+            this.chkHanger.Name = "chkHanger";
+            this.chkHanger.Size = new System.Drawing.Size(61, 17);
+            this.chkHanger.TabIndex = 24;
+            this.chkHanger.Text = "Hanger";
+            this.chkHanger.UseVisualStyleBackColor = true;
             // 
-            // textBoxBeratTotal
+            // chkSetrikaUap
             // 
-            this.textBoxBeratTotal.Location = new System.Drawing.Point(155, 227);
-            this.textBoxBeratTotal.Name = "textBoxBeratTotal";
-            this.textBoxBeratTotal.Size = new System.Drawing.Size(191, 20);
-            this.textBoxBeratTotal.TabIndex = 9;
+            this.chkSetrikaUap.AutoSize = true;
+            this.chkSetrikaUap.Location = new System.Drawing.Point(439, 229);
+            this.chkSetrikaUap.Name = "chkSetrikaUap";
+            this.chkSetrikaUap.Size = new System.Drawing.Size(82, 17);
+            this.chkSetrikaUap.TabIndex = 23;
+            this.chkSetrikaUap.Text = "Setrika Uap";
+            this.chkSetrikaUap.UseVisualStyleBackColor = true;
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(423, 390);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(105, 30);
+            this.btnReset.TabIndex = 22;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // cmbJenisService
+            // 
+            this.cmbJenisService.FormattingEnabled = true;
+            this.cmbJenisService.Location = new System.Drawing.Point(571, 26);
+            this.cmbJenisService.Name = "cmbJenisService";
+            this.cmbJenisService.Size = new System.Drawing.Size(191, 21);
+            this.cmbJenisService.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(436, 29);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Jenis Service";
+            // 
+            // lstJenisPakaian
+            // 
+            this.lstJenisPakaian.BackColor = System.Drawing.SystemColors.Window;
+            this.lstJenisPakaian.FormattingEnabled = true;
+            this.lstJenisPakaian.Location = new System.Drawing.Point(155, 69);
+            this.lstJenisPakaian.Name = "lstJenisPakaian";
+            this.lstJenisPakaian.Size = new System.Drawing.Size(191, 134);
+            this.lstJenisPakaian.TabIndex = 18;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(284, 390);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(105, 30);
+            this.btnAdd.TabIndex = 17;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // txtBeratTotal
+            // 
+            this.txtBeratTotal.Location = new System.Drawing.Point(155, 227);
+            this.txtBeratTotal.Name = "txtBeratTotal";
+            this.txtBeratTotal.Size = new System.Drawing.Size(191, 20);
+            this.txtBeratTotal.TabIndex = 9;
+            this.txtBeratTotal.TextChanged += new System.EventHandler(this.txtBeratTotal_TextChanged);
             // 
             // label6
             // 
@@ -164,93 +227,48 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nama Pelanggan";
             // 
-            // buttonAdd
+            // txtNamaPelanggan
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(284, 390);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(105, 30);
-            this.buttonAdd.TabIndex = 17;
-            this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.txtNamaPelanggan.Location = new System.Drawing.Point(155, 27);
+            this.txtNamaPelanggan.Name = "txtNamaPelanggan";
+            this.txtNamaPelanggan.Size = new System.Drawing.Size(191, 20);
+            this.txtNamaPelanggan.TabIndex = 27;
             // 
-            // listBoxJenisPakaian
+            // dtpTanggalMasuk
             // 
-            this.listBoxJenisPakaian.BackColor = System.Drawing.SystemColors.Window;
-            this.listBoxJenisPakaian.FormattingEnabled = true;
-            this.listBoxJenisPakaian.Location = new System.Drawing.Point(155, 69);
-            this.listBoxJenisPakaian.Name = "listBoxJenisPakaian";
-            this.listBoxJenisPakaian.Size = new System.Drawing.Size(191, 134);
-            this.listBoxJenisPakaian.TabIndex = 18;
+            this.dtpTanggalMasuk.Location = new System.Drawing.Point(570, 69);
+            this.dtpTanggalMasuk.Name = "dtpTanggalMasuk";
+            this.dtpTanggalMasuk.Size = new System.Drawing.Size(194, 20);
+            this.dtpTanggalMasuk.TabIndex = 28;
             // 
-            // comboBoxNamaPelanggan
+            // dtpTanggalSelesai
             // 
-            this.comboBoxNamaPelanggan.FormattingEnabled = true;
-            this.comboBoxNamaPelanggan.Location = new System.Drawing.Point(155, 26);
-            this.comboBoxNamaPelanggan.Name = "comboBoxNamaPelanggan";
-            this.comboBoxNamaPelanggan.Size = new System.Drawing.Size(191, 21);
-            this.comboBoxNamaPelanggan.TabIndex = 19;
+            this.dtpTanggalSelesai.Location = new System.Drawing.Point(570, 121);
+            this.dtpTanggalSelesai.Name = "dtpTanggalSelesai";
+            this.dtpTanggalSelesai.Size = new System.Drawing.Size(194, 20);
+            this.dtpTanggalSelesai.TabIndex = 29;
             // 
-            // comboBoxJenisService
+            // rdoCash
             // 
-            this.comboBoxJenisService.FormattingEnabled = true;
-            this.comboBoxJenisService.Location = new System.Drawing.Point(571, 26);
-            this.comboBoxJenisService.Name = "comboBoxJenisService";
-            this.comboBoxJenisService.Size = new System.Drawing.Size(191, 21);
-            this.comboBoxJenisService.TabIndex = 21;
+            this.rdoCash.AutoSize = true;
+            this.rdoCash.Location = new System.Drawing.Point(570, 167);
+            this.rdoCash.Name = "rdoCash";
+            this.rdoCash.Size = new System.Drawing.Size(49, 17);
+            this.rdoCash.TabIndex = 30;
+            this.rdoCash.TabStop = true;
+            this.rdoCash.Text = "Cash";
+            this.rdoCash.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // rdoTransfer
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(436, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Jenis Service";
-            // 
-            // buttonReset
-            // 
-            this.buttonReset.Location = new System.Drawing.Point(423, 390);
-            this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(105, 30);
-            this.buttonReset.TabIndex = 22;
-            this.buttonReset.Text = "Reset";
-            this.buttonReset.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSetrikaUap
-            // 
-            this.checkBoxSetrikaUap.AutoSize = true;
-            this.checkBoxSetrikaUap.Location = new System.Drawing.Point(439, 229);
-            this.checkBoxSetrikaUap.Name = "checkBoxSetrikaUap";
-            this.checkBoxSetrikaUap.Size = new System.Drawing.Size(82, 17);
-            this.checkBoxSetrikaUap.TabIndex = 23;
-            this.checkBoxSetrikaUap.Text = "Setrika Uap";
-            this.checkBoxSetrikaUap.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxHanger
-            // 
-            this.checkBoxHanger.AutoSize = true;
-            this.checkBoxHanger.Location = new System.Drawing.Point(527, 229);
-            this.checkBoxHanger.Name = "checkBoxHanger";
-            this.checkBoxHanger.Size = new System.Drawing.Size(61, 17);
-            this.checkBoxHanger.TabIndex = 24;
-            this.checkBoxHanger.Text = "Hanger";
-            this.checkBoxHanger.UseVisualStyleBackColor = true;
-            // 
-            // textBoxTotalHarga
-            // 
-            this.textBoxTotalHarga.Location = new System.Drawing.Point(573, 260);
-            this.textBoxTotalHarga.Name = "textBoxTotalHarga";
-            this.textBoxTotalHarga.Size = new System.Drawing.Size(191, 20);
-            this.textBoxTotalHarga.TabIndex = 26;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(438, 263);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 13);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Total Harga";
+            this.rdoTransfer.AutoSize = true;
+            this.rdoTransfer.Location = new System.Drawing.Point(657, 167);
+            this.rdoTransfer.Name = "rdoTransfer";
+            this.rdoTransfer.Size = new System.Drawing.Size(64, 17);
+            this.rdoTransfer.TabIndex = 31;
+            this.rdoTransfer.TabStop = true;
+            this.rdoTransfer.Text = "Transfer";
+            this.rdoTransfer.UseVisualStyleBackColor = true;
             // 
             // Input
             // 
@@ -274,22 +292,23 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxTanggalMasuk;
-        private System.Windows.Forms.TextBox textBoxBeratTotal;
+        private System.Windows.Forms.TextBox txtBeratTotal;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBoxMetodePembayaran;
-        private System.Windows.Forms.TextBox textBoxTanggalSelesai;
-        private System.Windows.Forms.Button buttonAdd;
-        private System.Windows.Forms.ComboBox comboBoxNamaPelanggan;
-        private System.Windows.Forms.ListBox listBoxJenisPakaian;
-        private System.Windows.Forms.CheckBox checkBoxHanger;
-        private System.Windows.Forms.CheckBox checkBoxSetrikaUap;
-        private System.Windows.Forms.Button buttonReset;
-        private System.Windows.Forms.ComboBox comboBoxJenisService;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ListBox lstJenisPakaian;
+        private System.Windows.Forms.CheckBox chkHanger;
+        private System.Windows.Forms.CheckBox chkSetrikaUap;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.ComboBox cmbJenisService;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxTotalHarga;
+        private System.Windows.Forms.TextBox txtTotalHarga;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtNamaPelanggan;
+        private System.Windows.Forms.DateTimePicker dtpTanggalSelesai;
+        private System.Windows.Forms.DateTimePicker dtpTanggalMasuk;
+        private System.Windows.Forms.RadioButton rdoCash;
+        private System.Windows.Forms.RadioButton rdoTransfer;
     }
 }

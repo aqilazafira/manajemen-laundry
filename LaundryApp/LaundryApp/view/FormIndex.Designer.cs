@@ -30,28 +30,29 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxTotalHarga = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.chkHanger = new System.Windows.Forms.CheckBox();
+            this.chkSetrikaUap = new System.Windows.Forms.CheckBox();
+            this.cmbJenisService = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lstJenisPakaian = new System.Windows.Forms.ListBox();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.txtBeratTotal = new System.Windows.Forms.TextBox();
+            this.txtNamaPelanggan = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.buttonUpdate = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonRefresh = new System.Windows.Forms.Button();
-            this.buttonExport = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBoxJenisService = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.checkBoxHanger = new System.Windows.Forms.CheckBox();
-            this.checkBoxSetrikaUap = new System.Windows.Forms.CheckBox();
-            this.textBoxTotalHarga = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtpTanggalMasuk = new System.Windows.Forms.DateTimePicker();
+            this.dtpTanggalSelesai = new System.Windows.Forms.DateTimePicker();
+            this.rdoCash = new System.Windows.Forms.RadioButton();
+            this.rdoTransfer = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,22 +67,23 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rdoTransfer);
+            this.groupBox1.Controls.Add(this.rdoCash);
+            this.groupBox1.Controls.Add(this.dtpTanggalSelesai);
+            this.groupBox1.Controls.Add(this.dtpTanggalMasuk);
             this.groupBox1.Controls.Add(this.textBoxTotalHarga);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.checkBoxHanger);
-            this.groupBox1.Controls.Add(this.checkBoxSetrikaUap);
-            this.groupBox1.Controls.Add(this.comboBoxJenisService);
+            this.groupBox1.Controls.Add(this.chkHanger);
+            this.groupBox1.Controls.Add(this.chkSetrikaUap);
+            this.groupBox1.Controls.Add(this.cmbJenisService);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.listBox1);
-            this.groupBox1.Controls.Add(this.buttonExport);
-            this.groupBox1.Controls.Add(this.buttonRefresh);
-            this.groupBox1.Controls.Add(this.buttonDelete);
-            this.groupBox1.Controls.Add(this.buttonUpdate);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.lstJenisPakaian);
+            this.groupBox1.Controls.Add(this.btnExport);
+            this.groupBox1.Controls.Add(this.btnRefresh);
+            this.groupBox1.Controls.Add(this.btnDelete);
+            this.groupBox1.Controls.Add(this.btnUpdate);
+            this.groupBox1.Controls.Add(this.txtBeratTotal);
+            this.groupBox1.Controls.Add(this.txtNamaPelanggan);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -95,14 +97,139 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detail";
             // 
-            // label1
+            // textBoxTotalHarga
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nama Pelanggan";
+            this.textBoxTotalHarga.Location = new System.Drawing.Point(530, 139);
+            this.textBoxTotalHarga.Name = "textBoxTotalHarga";
+            this.textBoxTotalHarga.Size = new System.Drawing.Size(232, 20);
+            this.textBoxTotalHarga.TabIndex = 28;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(417, 142);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 13);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Total Harga";
+            // 
+            // chkHanger
+            // 
+            this.chkHanger.AutoSize = true;
+            this.chkHanger.Location = new System.Drawing.Point(506, 104);
+            this.chkHanger.Name = "chkHanger";
+            this.chkHanger.Size = new System.Drawing.Size(61, 17);
+            this.chkHanger.TabIndex = 26;
+            this.chkHanger.Text = "Hanger";
+            this.chkHanger.UseVisualStyleBackColor = true;
+            // 
+            // chkSetrikaUap
+            // 
+            this.chkSetrikaUap.AutoSize = true;
+            this.chkSetrikaUap.Location = new System.Drawing.Point(418, 104);
+            this.chkSetrikaUap.Name = "chkSetrikaUap";
+            this.chkSetrikaUap.Size = new System.Drawing.Size(82, 17);
+            this.chkSetrikaUap.TabIndex = 25;
+            this.chkSetrikaUap.Text = "Setrika Uap";
+            this.chkSetrikaUap.UseVisualStyleBackColor = true;
+            // 
+            // cmbJenisService
+            // 
+            this.cmbJenisService.FormattingEnabled = true;
+            this.cmbJenisService.Location = new System.Drawing.Point(101, 139);
+            this.cmbJenisService.Name = "cmbJenisService";
+            this.cmbJenisService.Size = new System.Drawing.Size(191, 21);
+            this.cmbJenisService.TabIndex = 23;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 142);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 13);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Jenis Service";
+            // 
+            // lstJenisPakaian
+            // 
+            this.lstJenisPakaian.FormattingEnabled = true;
+            this.lstJenisPakaian.Location = new System.Drawing.Point(101, 47);
+            this.lstJenisPakaian.Name = "lstJenisPakaian";
+            this.lstJenisPakaian.Size = new System.Drawing.Size(192, 56);
+            this.lstJenisPakaian.TabIndex = 20;
+            // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(542, 178);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(105, 30);
+            this.btnExport.TabIndex = 19;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(405, 178);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(105, 30);
+            this.btnRefresh.TabIndex = 18;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(273, 178);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(105, 30);
+            this.btnDelete.TabIndex = 17;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(140, 178);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(105, 30);
+            this.btnUpdate.TabIndex = 16;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // txtBeratTotal
+            // 
+            this.txtBeratTotal.Location = new System.Drawing.Point(101, 113);
+            this.txtBeratTotal.Name = "txtBeratTotal";
+            this.txtBeratTotal.Size = new System.Drawing.Size(192, 20);
+            this.txtBeratTotal.TabIndex = 12;
+            this.txtBeratTotal.TextChanged += new System.EventHandler(this.txtBeratTotal_TextChanged);
+            // 
+            // txtNamaPelanggan
+            // 
+            this.txtNamaPelanggan.Location = new System.Drawing.Point(101, 18);
+            this.txtNamaPelanggan.Name = "txtNamaPelanggan";
+            this.txtNamaPelanggan.Size = new System.Drawing.Size(192, 20);
+            this.txtNamaPelanggan.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(415, 73);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Metode Pembayaran";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(415, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Tanggal Selesai";
             // 
             // label4
             // 
@@ -131,156 +258,50 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Jenis Pakaian";
             // 
-            // label6
+            // label1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(415, 73);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Metode Pembayaran";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nama Pelanggan";
             // 
-            // label5
+            // dtpTanggalMasuk
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(415, 47);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Tanggal Selesai";
+            this.dtpTanggalMasuk.Location = new System.Drawing.Point(530, 17);
+            this.dtpTanggalMasuk.Name = "dtpTanggalMasuk";
+            this.dtpTanggalMasuk.Size = new System.Drawing.Size(232, 20);
+            this.dtpTanggalMasuk.TabIndex = 29;
             // 
-            // textBox3
+            // dtpTanggalSelesai
             // 
-            this.textBox3.Location = new System.Drawing.Point(101, 113);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(192, 20);
-            this.textBox3.TabIndex = 12;
+            this.dtpTanggalSelesai.Location = new System.Drawing.Point(530, 44);
+            this.dtpTanggalSelesai.Name = "dtpTanggalSelesai";
+            this.dtpTanggalSelesai.Size = new System.Drawing.Size(232, 20);
+            this.dtpTanggalSelesai.TabIndex = 30;
             // 
-            // textBox1
+            // rdoCash
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 20);
-            this.textBox1.TabIndex = 10;
+            this.rdoCash.AutoSize = true;
+            this.rdoCash.Location = new System.Drawing.Point(527, 73);
+            this.rdoCash.Name = "rdoCash";
+            this.rdoCash.Size = new System.Drawing.Size(49, 17);
+            this.rdoCash.TabIndex = 31;
+            this.rdoCash.TabStop = true;
+            this.rdoCash.Text = "Cash";
+            this.rdoCash.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // rdoTransfer
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(530, 70);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(232, 21);
-            this.comboBox1.TabIndex = 15;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(530, 44);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(232, 20);
-            this.textBox5.TabIndex = 14;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(530, 18);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(232, 20);
-            this.textBox4.TabIndex = 13;
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Location = new System.Drawing.Point(140, 178);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(105, 30);
-            this.buttonUpdate.TabIndex = 16;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.Location = new System.Drawing.Point(273, 178);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(105, 30);
-            this.buttonDelete.TabIndex = 17;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            // 
-            // buttonRefresh
-            // 
-            this.buttonRefresh.Location = new System.Drawing.Point(405, 178);
-            this.buttonRefresh.Name = "buttonRefresh";
-            this.buttonRefresh.Size = new System.Drawing.Size(105, 30);
-            this.buttonRefresh.TabIndex = 18;
-            this.buttonRefresh.Text = "Refresh";
-            this.buttonRefresh.UseVisualStyleBackColor = true;
-            // 
-            // buttonExport
-            // 
-            this.buttonExport.Location = new System.Drawing.Point(542, 178);
-            this.buttonExport.Name = "buttonExport";
-            this.buttonExport.Size = new System.Drawing.Size(105, 30);
-            this.buttonExport.TabIndex = 19;
-            this.buttonExport.Text = "Export";
-            this.buttonExport.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(101, 47);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(192, 56);
-            this.listBox1.TabIndex = 20;
-            // 
-            // comboBoxJenisService
-            // 
-            this.comboBoxJenisService.FormattingEnabled = true;
-            this.comboBoxJenisService.Location = new System.Drawing.Point(101, 139);
-            this.comboBoxJenisService.Name = "comboBoxJenisService";
-            this.comboBoxJenisService.Size = new System.Drawing.Size(191, 21);
-            this.comboBoxJenisService.TabIndex = 23;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 142);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 13);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Jenis Service";
-            // 
-            // checkBoxHanger
-            // 
-            this.checkBoxHanger.AutoSize = true;
-            this.checkBoxHanger.Location = new System.Drawing.Point(506, 104);
-            this.checkBoxHanger.Name = "checkBoxHanger";
-            this.checkBoxHanger.Size = new System.Drawing.Size(61, 17);
-            this.checkBoxHanger.TabIndex = 26;
-            this.checkBoxHanger.Text = "Hanger";
-            this.checkBoxHanger.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSetrikaUap
-            // 
-            this.checkBoxSetrikaUap.AutoSize = true;
-            this.checkBoxSetrikaUap.Location = new System.Drawing.Point(418, 104);
-            this.checkBoxSetrikaUap.Name = "checkBoxSetrikaUap";
-            this.checkBoxSetrikaUap.Size = new System.Drawing.Size(82, 17);
-            this.checkBoxSetrikaUap.TabIndex = 25;
-            this.checkBoxSetrikaUap.Text = "Setrika Uap";
-            this.checkBoxSetrikaUap.UseVisualStyleBackColor = true;
-            // 
-            // textBoxTotalHarga
-            // 
-            this.textBoxTotalHarga.Location = new System.Drawing.Point(530, 139);
-            this.textBoxTotalHarga.Name = "textBoxTotalHarga";
-            this.textBoxTotalHarga.Size = new System.Drawing.Size(232, 20);
-            this.textBoxTotalHarga.TabIndex = 28;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(417, 142);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 13);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Total Harga";
+            this.rdoTransfer.AutoSize = true;
+            this.rdoTransfer.Location = new System.Drawing.Point(629, 73);
+            this.rdoTransfer.Name = "rdoTransfer";
+            this.rdoTransfer.Size = new System.Drawing.Size(64, 17);
+            this.rdoTransfer.TabIndex = 32;
+            this.rdoTransfer.TabStop = true;
+            this.rdoTransfer.Text = "Transfer";
+            this.rdoTransfer.UseVisualStyleBackColor = true;
             // 
             // FormIndex
             // 
@@ -309,21 +330,22 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button buttonRefresh;
-        private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button buttonExport;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBoxJenisService;
+        private System.Windows.Forms.TextBox txtBeratTotal;
+        private System.Windows.Forms.TextBox txtNamaPelanggan;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.ListBox lstJenisPakaian;
+        private System.Windows.Forms.ComboBox cmbJenisService;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBoxHanger;
-        private System.Windows.Forms.CheckBox checkBoxSetrikaUap;
+        private System.Windows.Forms.CheckBox chkHanger;
+        private System.Windows.Forms.CheckBox chkSetrikaUap;
         private System.Windows.Forms.TextBox textBoxTotalHarga;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RadioButton rdoTransfer;
+        private System.Windows.Forms.RadioButton rdoCash;
+        private System.Windows.Forms.DateTimePicker dtpTanggalSelesai;
+        private System.Windows.Forms.DateTimePicker dtpTanggalMasuk;
     }
 }
