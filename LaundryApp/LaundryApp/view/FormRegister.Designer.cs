@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
-            this.buttonLogin = new System.Windows.Forms.Button();
+            this.buttonRegister = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -74,14 +74,14 @@
             this.textBoxUsername.Size = new System.Drawing.Size(285, 20);
             this.textBoxUsername.TabIndex = 11;
             // 
-            // buttonLogin
+            // buttonRegister
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(190, 317);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(124, 47);
-            this.buttonLogin.TabIndex = 10;
-            this.buttonLogin.Text = "Login";
-            this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonRegister.Location = new System.Drawing.Point(190, 317);
+            this.buttonRegister.Name = "buttonRegister";
+            this.buttonRegister.Size = new System.Drawing.Size(124, 47);
+            this.buttonRegister.TabIndex = 10;
+            this.buttonRegister.Text = "Register";
+            this.buttonRegister.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -130,7 +130,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.buttonLogin);
+            this.panel1.Controls.Add(this.buttonRegister);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBoxUsername);
             this.panel1.Controls.Add(this.label4);
@@ -165,7 +165,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxUsername;
-        private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;

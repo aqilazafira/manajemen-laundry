@@ -17,16 +17,6 @@ namespace LaundryApp.view
             InitializeComponent();
         }
 
-            this.labelTitle = new System.Windows.Forms.Label();  
-            this.labelUsername = new System.Windows.Forms.Label();  
-            this.textBoxUsername = new System.Windows.Forms.TextBox();  
-            this.labelPassword = new System.Windows.Forms.Label();  
-            this.textBoxPassword = new System.Windows.Forms.TextBox();  
-            this.labelRetypePassword = new System.Windows.Forms.Label();  
-            this.textBoxRetypePassword = new System.Windows.Forms.TextBox();  
-            this.buttonRegister = new System.Windows.Forms.Button();  
-            this.SuspendLayout();
-
         private void FormRegister_Load(object sender, EventArgs e)
         {
 
