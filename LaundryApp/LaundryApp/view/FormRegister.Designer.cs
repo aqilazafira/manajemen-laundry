@@ -30,14 +30,14 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.buttonRegister = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRetypePassword = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,19 +60,19 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Username";
             // 
-            // textBoxPassword
+            // txtPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(164, 220);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(285, 20);
-            this.textBoxPassword.TabIndex = 12;
+            this.txtPassword.Location = new System.Drawing.Point(164, 220);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(285, 20);
+            this.txtPassword.TabIndex = 12;
             // 
-            // textBoxUsername
+            // txtUsername
             // 
-            this.textBoxUsername.Location = new System.Drawing.Point(164, 128);
-            this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(285, 20);
-            this.textBoxUsername.TabIndex = 11;
+            this.txtUsername.Location = new System.Drawing.Point(164, 128);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(285, 20);
+            this.txtUsername.TabIndex = 11;
             // 
             // buttonRegister
             // 
@@ -102,12 +102,12 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Retype Password";
             // 
-            // textBox1
+            // txtRetypePassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(164, 266);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 20);
-            this.textBox1.TabIndex = 15;
+            this.txtRetypePassword.Location = new System.Drawing.Point(164, 266);
+            this.txtRetypePassword.Name = "txtRetypePassword";
+            this.txtRetypePassword.Size = new System.Drawing.Size(285, 20);
+            this.txtRetypePassword.TabIndex = 15;
             // 
             // label5
             // 
@@ -118,12 +118,12 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Email";
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(164, 174);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(285, 20);
-            this.textBox2.TabIndex = 17;
+            this.txtEmail.Location = new System.Drawing.Point(164, 174);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(285, 20);
+            this.txtEmail.TabIndex = 17;
             // 
             // panel1
             // 
@@ -131,11 +131,11 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.buttonRegister);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBoxUsername);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.txtUsername);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBoxPassword);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Controls.Add(this.txtRetypePassword);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(145, 27);
@@ -163,14 +163,14 @@
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRetypePassword;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Panel panel1;
     }
 }

@@ -10,7 +10,7 @@ namespace LaundryApp.controller
 {
     internal class Koneksi
     {
-        string conectionstring = "Server=localhost;Database=pemrog2ulbi;Uid=root;Pwd=;";
+        string conectionstring = "Server=localhost;Database=laundry;Uid=root;Pwd=;";
         MySqlConnection kon;
 
         public void OpenConnection()
@@ -27,6 +27,16 @@ namespace LaundryApp.controller
         public void ExecuteQuery(string query)
         {
             MySqlCommand command = new MySqlCommand(query, kon);
+            command.ExecuteNonQuery();
+        }
+
+        public void ExecuteQuery(string query, Dictionary<string, object> parameters)
+        {
+            MySqlCommand command = new MySqlCommand(query, kon);
+            foreach (var param in parameters)
+            {
+                command.Parameters.AddWithValue(param.Key, param.Value);
+            }
             command.ExecuteNonQuery();
         }
 
