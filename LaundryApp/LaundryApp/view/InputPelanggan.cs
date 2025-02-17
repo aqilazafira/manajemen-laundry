@@ -16,6 +16,7 @@ namespace LaundryApp.view
     {
         Koneksi koneksi = new Koneksi();
         M_Pelanggan m_plgn = new M_Pelanggan();
+        Pelanggan pelangganController = new Pelanggan();
 
         public InputPelanggan()
         {
@@ -31,19 +32,14 @@ namespace LaundryApp.view
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (txtNamaPelanggan.Text == "" || txtNoHP.Text == "" || dtpTanggalDaftar.Text == "")
-            {
-               MessageBox.Show("Data tidak boleh kosong", "Peringatan",
-               MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                Pelanggan plgn = new Pelanggan();
-                m_plgn.Nama = txtNamaPelanggan.Text;
-                m_plgn.Nohp = txtNoHP.Text;
-                m_plgn.Tanggal_daftar = dtpTanggalDaftar.Text;
+            string nama = txtNamaPelanggan.Text;
+            string nohp = txtNoHP.Text;
+            string tanggalDaftar = dtpTanggalDaftar.Value.ToString("yyyy-MM-dd");
 
-                plgn.Insert(m_plgn);
+            bool status = pelangganController.HandleInputPelanggan(nama, nohp, tanggalDaftar);
+            if (status)
+            {
+                MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ResetForm();
             }
         }

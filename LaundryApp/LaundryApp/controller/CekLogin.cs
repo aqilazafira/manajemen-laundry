@@ -35,5 +35,16 @@ namespace LaundryApp.controller
             }
             return false;
         }
+
+        public bool HandleLoginInput(string username, string password)
+        {
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Username dan Password tidak boleh kosong!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return cek_login(username, password);
+        }
     }
 }

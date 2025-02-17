@@ -1,4 +1,5 @@
-﻿using System;
+using LaundryApp.controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace LaundryApp.view
 {
     public partial class DataTransaksi : Form
     {
+        Transaksi transaksiController = new Transaksi();
+
         public DataTransaksi()
         {
             InitializeComponent();
@@ -19,21 +22,33 @@ namespace LaundryApp.view
 
         private void txtBeratTotal_TextChanged(object sender, EventArgs e)
         {
-
+            // Perhitungan otomatis untuk total harga
+            if (double.TryParse(txtBeratTotal.Text, out double berat))
+            {
+                double hargaPerKg = 5000; // Harga per kg (contoh)
+                txtTotalHarga.Text = (berat * hargaPerKg).ToString();
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            // Logika untuk update data
-            if (string.IsNullOrWhiteSpace(txtNamaPelanggan.Text) || string.IsNullOrWhiteSpace(txtBeratTotal.Text))
-            {
-                MessageBox.Show("Mohon pilih data yang akan diupdate!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            string namaPelanggan = txtNamaPelanggan.Text;
+            string jenisPakaian = string.Join(", ", lstJenisPakaian.SelectedItems);
+            double beratTotal = double.Parse(txtBeratTotal.Text);
+            string jenisService = cmbJenisService.SelectedItem.ToString();
+            DateTime tanggalMasuk = dtpTanggalMasuk.Value;
+            DateTime tanggalSelesai = dtpTanggalSelesai.Value;
+            bool setrikaUap = chkSetrikaUap.Checked;
+            bool hanger = chkHanger.Checked;
+            string metodePembayaran = rdoCash.Checked ? "Cash" : "Transfer";
+            double totalHarga = double.Parse(txtTotalHarga.Text);
 
-            // Update data ke database atau list
-            MessageBox.Show("Data berhasil diperbarui!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            RefreshData(); // Refresh data setelah update
+            bool status = transaksiController.HandleInputTransaksi(namaPelanggan, jenisPakaian, beratTotal, jenisService, tanggalMasuk, tanggalSelesai, setrikaUap, hanger, metodePembayaran, totalHarga);
+            if (status)
+            {
+                MessageBox.Show("Data berhasil diperbarui!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefreshData();
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -44,13 +59,13 @@ namespace LaundryApp.view
             {
                 // Hapus data dari database atau list
                 MessageBox.Show("Data berhasil dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                RefreshData(); // Refresh data setelah penghapusan
+                RefreshData();
             }
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            RefreshData(); // Method untuk memuat ulang data
+            RefreshData();
         }
 
         private void RefreshData()
@@ -76,4 +91,4 @@ namespace LaundryApp.view
             }
         }
     }
-    }
+}

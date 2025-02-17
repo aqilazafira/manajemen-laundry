@@ -1,4 +1,5 @@
-﻿using System;
+using LaundryApp.controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace LaundryApp.view
 {
     public partial class InputTransaksi : Form
     {
+        Transaksi transaksiController = new Transaksi();
+
         public InputTransaksi()
         {
             InitializeComponent();
@@ -47,10 +50,12 @@ namespace LaundryApp.view
             string metodePembayaran = rdoCash.Checked ? "Cash" : "Transfer";
             double totalHarga = double.Parse(txtTotalHarga.Text);
 
-            MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // Reset form setelah input
-            ResetForm();
+            bool status = transaksiController.HandleInputTransaksi(namaPelanggan, jenisPakaian, beratTotal, jenisService, tanggalMasuk, tanggalSelesai, setrikaUap, hanger, metodePembayaran, totalHarga);
+            if (status)
+            {
+                MessageBox.Show("Data berhasil ditambahkan!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetForm();
+            }
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -83,4 +88,3 @@ namespace LaundryApp.view
         }
     }
 }
-
