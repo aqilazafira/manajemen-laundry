@@ -24,7 +24,7 @@ namespace LaundryApp.view
         {
             if (textBoxUsername.Text == "" || textBoxPassword.Text == "")
             {
-                MessageBox.Show("Username dan Password tidak boleeh kosong!");
+                MessageBox.Show("Username dan Password tidak boleh kosong!");
             }
             else
             {

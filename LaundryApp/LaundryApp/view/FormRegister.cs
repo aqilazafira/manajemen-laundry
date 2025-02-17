@@ -25,40 +25,47 @@ namespace LaundryApp.view
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
-            string retypePassword = txtRetypePassword.Text;
-            string email = txtEmail.Text;
+         
+        }
 
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(retypePassword) || string.IsNullOrEmpty(email))
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "" || txtEmail.Text == "" || txtPassword.Text == "" || txtRetypePassword.Text == "")
             {
-                MessageBox.Show("Please fill in all fields.");
-                return;
+                MessageBox.Show("Username, Email, Password, dan validasi Password tidak boleh kosong!");
             }
-
-            if (password != retypePassword)
+            else if (txtPassword.Text != txtRetypePassword.Text) 
             {
-                MessageBox.Show("Passwords do not match.");
-                return;
+                MessageBox.Show("Password dan validasi Password tidak sama!");
             }
-
-            try
+            else
             {
-                Koneksi koneksi = new Koneksi();
-                string query = "INSERT INTO Users (Username, Password, Email) VALUES (@Username, @Password, @Email)";
-                var parameters = new Dictionary<string, object>
+                string username = txtUsername.Text;
+                string email = txtEmail.Text;
+                string password = txtPassword.Text;
+                string retypePassword = txtRetypePassword.Text;
+
+                try
+                {
+                    Koneksi koneksi = new Koneksi();
+                    string query = "INSERT INTO Users (Username, Password, Email) VALUES (@Username, @Password, @Email)";
+                    var parameters = new Dictionary<string, object>
                 {
                     { "@Username", username },
                     { "@Password", password },
                     { "@Email", email }
                 };
 
-                koneksi.ExecuteQuery(query, parameters);
-                MessageBox.Show("Registration successful.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("An error occurred: " + ex.Message);
+                    koneksi.ExecuteQuery(query, parameters);
+                    MessageBox.Show("Registrasi berhasil.");
+                    FormLogin login = new FormLogin();
+                    this.Hide();
+                    login.Show();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Gagal Registrasi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

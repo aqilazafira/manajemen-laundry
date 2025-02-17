@@ -13,6 +13,7 @@ namespace LaundryApp.view
 {
     public partial class DataPelanggan : Form
     {
+        Koneksi koneksi = new Koneksi();
         Pelanggan pelangganController = new Pelanggan();
 
         public DataPelanggan()
@@ -72,6 +73,15 @@ namespace LaundryApp.view
                 System.IO.File.WriteAllText(saveFileDialog.FileName, "Sample Data");
                 MessageBox.Show("Data berhasil diexport ke file!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        public void Tampil()
+        {
+            dataGridViewPelanggan.DataSource = koneksi.ShowData("SELECT * FROM t_pelanggan");
+        }
+        private void DataPelanggan_Load(object sender, EventArgs e)
+        {
+            Tampil();
         }
     }
 }

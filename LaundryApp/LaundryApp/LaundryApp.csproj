@@ -101,7 +101,9 @@
     <Compile Include="controller\CekLogin.cs" />
     <Compile Include="controller\Koneksi.cs" />
     <Compile Include="controller\Pelanggan.cs" />
+    <Compile Include="controller\Transaksi.cs" />
     <Compile Include="model\M_Pelanggan.cs" />
+    <Compile Include="model\M_Transaksi.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

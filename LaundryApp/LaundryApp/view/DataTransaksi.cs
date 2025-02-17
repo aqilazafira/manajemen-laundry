@@ -13,6 +13,7 @@ namespace LaundryApp.view
 {
     public partial class DataTransaksi : Form
     {
+        Koneksi koneksi = new Koneksi();
         Transaksi transaksiController = new Transaksi();
 
         public DataTransaksi()
@@ -26,7 +27,7 @@ namespace LaundryApp.view
             if (double.TryParse(txtBeratTotal.Text, out double berat))
             {
                 double hargaPerKg = 5000; // Harga per kg (contoh)
-                txtTotalHarga.Text = (berat * hargaPerKg).ToString();
+                textBoxTotalHarga.Text = (berat * hargaPerKg).ToString();
             }
         }
 
@@ -41,7 +42,7 @@ namespace LaundryApp.view
             bool setrikaUap = chkSetrikaUap.Checked;
             bool hanger = chkHanger.Checked;
             string metodePembayaran = rdoCash.Checked ? "Cash" : "Transfer";
-            double totalHarga = double.Parse(txtTotalHarga.Text);
+            double totalHarga = double.Parse(textBoxTotalHarga.Text);
 
             bool status = transaksiController.HandleInputTransaksi(namaPelanggan, jenisPakaian, beratTotal, jenisService, tanggalMasuk, tanggalSelesai, setrikaUap, hanger, metodePembayaran, totalHarga);
             if (status)
@@ -89,6 +90,15 @@ namespace LaundryApp.view
                 System.IO.File.WriteAllText(saveFileDialog.FileName, "Sample Data");
                 MessageBox.Show("Data berhasil diexport ke file!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        public void Tampil()
+        {
+            dataGridViewTransaksi.DataSource = koneksi.ShowData("SELECT * FROM t_transaksi");
+        }
+        private void DataTransaksi_Load(object sender, EventArgs e)
+        {
+            Tampil();
         }
     }
 }
