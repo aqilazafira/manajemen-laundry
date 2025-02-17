@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LaundryApp.controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace LaundryApp.view
 {
     public partial class FormLogin : Form
     {
+        CekLogin login = new CekLogin();
         public FormLogin()
         {
             InitializeComponent();
@@ -29,18 +31,18 @@ namespace LaundryApp.view
                 string username = textBoxUsername.Text;
                 string password = textBoxPassword.Text;
 
-                //bool status = login.cek_login(username, password);
-                //if (status) 
-                //{
-                //    MessageBox.Show("Login berhasil", "Berhasil");
-                //    ParentForm pform = new ParentForm();
-                //    this.Hide();
-                //    pform.Show();
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Gagal login", "Gagal");
-                //}
+                bool status = login.cek_login(username, password);
+                if (status)
+                {
+                    MessageBox.Show("Login berhasil", "Berhasil");
+                    Main main = new Main();
+                    this.Hide();
+                    main.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Gagal login", "Gagal");
+                }
             }
         }
     }

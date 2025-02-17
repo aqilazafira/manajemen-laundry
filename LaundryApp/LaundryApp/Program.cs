@@ -18,7 +18,7 @@ namespace LaundryApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new StartUp());
-            Application.Run(new FormLogin());
+            Application.Run(new FormHome());
         }
     }
 }

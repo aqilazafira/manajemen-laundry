@@ -100,10 +100,18 @@
   <ItemGroup>
     <Compile Include="controller\CekLogin.cs" />
     <Compile Include="controller\Koneksi.cs" />
+    <Compile Include="controller\Pelanggan.cs" />
+    <Compile Include="model\M_Pelanggan.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="view\DataPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\DataPelanggan.Designer.cs">
+      <DependentUpon>DataPelanggan.cs</DependentUpon>
     </Compile>
     <Compile Include="view\FormHome.cs">
       <SubType>Form</SubType>
@@ -111,11 +119,11 @@
     <Compile Include="view\FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\FormIndex.cs">
+    <Compile Include="view\DataTransaksi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\FormIndex.Designer.cs">
-      <DependentUpon>FormIndex.cs</DependentUpon>
+    <Compile Include="view\DataTransaksi.Designer.cs">
+      <DependentUpon>DataTransaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,11 +139,29 @@
     <Compile Include="view\FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\Input.cs">
+    <Compile Include="view\InputPelanggan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\Input.Designer.cs">
-      <DependentUpon>Input.cs</DependentUpon>
+    <Compile Include="view\InputPelanggan.Designer.cs">
+      <DependentUpon>InputPelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\InputTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\InputTransaksi.Designer.cs">
+      <DependentUpon>InputTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\PenyelesaianTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PenyelesaianTransaksi.Designer.cs">
+      <DependentUpon>PenyelesaianTransaksi.cs</DependentUpon>
     </Compile>
     <Compile Include="view\StartUp.cs">
       <SubType>Form</SubType>
@@ -148,11 +174,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\DataPelanggan.resx">
+      <DependentUpon>DataPelanggan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\FormIndex.resx">
-      <DependentUpon>FormIndex.cs</DependentUpon>
+    <EmbeddedResource Include="view\DataTransaksi.resx">
+      <DependentUpon>DataTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -160,8 +189,17 @@
     <EmbeddedResource Include="view\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\Input.resx">
-      <DependentUpon>Input.cs</DependentUpon>
+    <EmbeddedResource Include="view\InputPelanggan.resx">
+      <DependentUpon>InputPelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\InputTransaksi.resx">
+      <DependentUpon>InputTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PenyelesaianTransaksi.resx">
+      <DependentUpon>PenyelesaianTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\StartUp.resx">
       <DependentUpon>StartUp.cs</DependentUpon>
@@ -180,9 +218,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\start-removebg-preview.png" />
   </ItemGroup>

@@ -39,6 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnKembali = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +129,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.btnKembali);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.buttonRegister);
@@ -142,6 +144,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(510, 395);
             this.panel1.TabIndex = 19;
+            // 
+            // btnKembali
+            // 
+            this.btnKembali.Location = new System.Drawing.Point(3, 3);
+            this.btnKembali.Name = "btnKembali";
+            this.btnKembali.Size = new System.Drawing.Size(56, 30);
+            this.btnKembali.TabIndex = 40;
+            this.btnKembali.Text = "Kembali";
+            this.btnKembali.UseVisualStyleBackColor = true;
             // 
             // FormRegister
             // 
@@ -172,5 +183,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnKembali;
     }
 }

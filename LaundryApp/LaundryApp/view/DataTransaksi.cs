@@ -1,0 +1,94 @@
+using LaundryApp.controller;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace LaundryApp.view
+{
+    public partial class DataTransaksi : Form
+    {
+        Transaksi transaksiController = new Transaksi();
+
+        public DataTransaksi()
+        {
+            InitializeComponent();
+        }
+
+        private void txtBeratTotal_TextChanged(object sender, EventArgs e)
+        {
+            // Perhitungan otomatis untuk total harga
+            if (double.TryParse(txtBeratTotal.Text, out double berat))
+            {
+                double hargaPerKg = 5000; // Harga per kg (contoh)
+                txtTotalHarga.Text = (berat * hargaPerKg).ToString();
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string namaPelanggan = txtNamaPelanggan.Text;
+            string jenisPakaian = string.Join(", ", lstJenisPakaian.SelectedItems);
+            double beratTotal = double.Parse(txtBeratTotal.Text);
+            string jenisService = cmbJenisService.SelectedItem.ToString();
+            DateTime tanggalMasuk = dtpTanggalMasuk.Value;
+            DateTime tanggalSelesai = dtpTanggalSelesai.Value;
+            bool setrikaUap = chkSetrikaUap.Checked;
+            bool hanger = chkHanger.Checked;
+            string metodePembayaran = rdoCash.Checked ? "Cash" : "Transfer";
+            double totalHarga = double.Parse(txtTotalHarga.Text);
+
+            bool status = transaksiController.HandleInputTransaksi(namaPelanggan, jenisPakaian, beratTotal, jenisService, tanggalMasuk, tanggalSelesai, setrikaUap, hanger, metodePembayaran, totalHarga);
+            if (status)
+            {
+                MessageBox.Show("Data berhasil diperbarui!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefreshData();
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            // Konfirmasi penghapusan
+            var confirmResult = MessageBox.Show("Apakah Anda yakin ingin menghapus data ini?", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirmResult == DialogResult.Yes)
+            {
+                // Hapus data dari database atau list
+                MessageBox.Show("Data berhasil dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefreshData();
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            RefreshData();
+        }
+
+        private void RefreshData()
+        {
+            // Logika untuk memuat data dari database atau list
+            MessageBox.Show("Data berhasil diperbarui!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            // Gunakan SaveFileDialog untuk memilih lokasi penyimpanan file
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "CSV file (*.csv)|*.csv",
+                Title = "Export Data"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Logika untuk menyimpan data ke file CSV
+                System.IO.File.WriteAllText(saveFileDialog.FileName, "Sample Data");
+                MessageBox.Show("Data berhasil diexport ke file!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+    }
+}

@@ -19,16 +19,16 @@ namespace LaundryApp.view
 
         private void buttonLoginForm_Click(object sender, EventArgs e)
         {
-            FormLogin fh = new FormLogin();
-            Close();
-            fh.Show();
+            FormLogin fl = new FormLogin();
+            this.Hide();
+            fl.Show();
         }
 
         private void buttonRegisterForm_Click(object sender, EventArgs e)
         {
-            FormRegister fh = new FormRegister();
-            Close();
-            fh.Show();
+            FormRegister fr = new FormRegister();
+            this.Hide();
+            fr.Show();
         }
     }
 }
