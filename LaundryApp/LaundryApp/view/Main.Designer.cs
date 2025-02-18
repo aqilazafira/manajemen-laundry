@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonKeluar = new System.Windows.Forms.Button();
             this.buttonPenyelesaianTransaksi = new System.Windows.Forms.Button();
             this.buttonDataTransaksi = new System.Windows.Forms.Button();
             this.buttonDataPelanggan = new System.Windows.Forms.Button();
             this.buttonInputPelanggan = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonInputTransaksi = new System.Windows.Forms.Button();
-            this.buttonKeluar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(463, 256);
             this.panel1.TabIndex = 4;
+            // 
+            // buttonKeluar
+            // 
+            this.buttonKeluar.Location = new System.Drawing.Point(308, 168);
+            this.buttonKeluar.Name = "buttonKeluar";
+            this.buttonKeluar.Size = new System.Drawing.Size(124, 47);
+            this.buttonKeluar.TabIndex = 6;
+            this.buttonKeluar.Text = "Keluar";
+            this.buttonKeluar.UseVisualStyleBackColor = true;
+            this.buttonKeluar.Click += new System.EventHandler(this.buttonKeluar_Click);
             // 
             // buttonPenyelesaianTransaksi
             // 
@@ -115,22 +125,15 @@
             this.buttonInputTransaksi.UseVisualStyleBackColor = true;
             this.buttonInputTransaksi.Click += new System.EventHandler(this.buttonInputTransaksi_Click);
             // 
-            // buttonKeluar
-            // 
-            this.buttonKeluar.Location = new System.Drawing.Point(308, 168);
-            this.buttonKeluar.Name = "buttonKeluar";
-            this.buttonKeluar.Size = new System.Drawing.Size(124, 47);
-            this.buttonKeluar.TabIndex = 6;
-            this.buttonKeluar.Text = "Keluar";
-            this.buttonKeluar.UseVisualStyleBackColor = true;
-            this.buttonKeluar.Click += new System.EventHandler(this.buttonKeluar_Click);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::LaundryApp.Properties.Resources.Cream_Green_Abstract_Blank_Template_Instagram_Story;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Name = "Main";
             this.Text = "Main";
             this.panel1.ResumeLayout(false);

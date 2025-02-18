@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnKembali = new System.Windows.Forms.Button();
+            this.rdoMenyusul = new System.Windows.Forms.RadioButton();
+            this.txtNoHP = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.rdoTransfer = new System.Windows.Forms.RadioButton();
             this.rdoCash = new System.Windows.Forms.RadioButton();
             this.dtpTanggalSelesai = new System.Windows.Forms.DateTimePicker();
@@ -50,10 +54,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNoHP = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.rdoMenyusul = new System.Windows.Forms.RadioButton();
-            this.btnKembali = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +90,42 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Laundry";
+            // 
+            // btnKembali
+            // 
+            this.btnKembali.Location = new System.Drawing.Point(202, 390);
+            this.btnKembali.Name = "btnKembali";
+            this.btnKembali.Size = new System.Drawing.Size(105, 30);
+            this.btnKembali.TabIndex = 39;
+            this.btnKembali.Text = "Kembali";
+            this.btnKembali.UseVisualStyleBackColor = true;
+            // 
+            // rdoMenyusul
+            // 
+            this.rdoMenyusul.AutoSize = true;
+            this.rdoMenyusul.Location = new System.Drawing.Point(570, 119);
+            this.rdoMenyusul.Name = "rdoMenyusul";
+            this.rdoMenyusul.Size = new System.Drawing.Size(70, 17);
+            this.rdoMenyusul.TabIndex = 38;
+            this.rdoMenyusul.TabStop = true;
+            this.rdoMenyusul.Text = "Menyusul";
+            this.rdoMenyusul.UseVisualStyleBackColor = true;
+            // 
+            // txtNoHP
+            // 
+            this.txtNoHP.Location = new System.Drawing.Point(155, 256);
+            this.txtNoHP.Name = "txtNoHP";
+            this.txtNoHP.Size = new System.Drawing.Size(192, 20);
+            this.txtNoHP.TabIndex = 37;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(20, 263);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "No. HP";
             // 
             // rdoTransfer
             // 
@@ -140,6 +176,7 @@
             this.txtTotalHarga.Name = "txtTotalHarga";
             this.txtTotalHarga.Size = new System.Drawing.Size(192, 20);
             this.txtTotalHarga.TabIndex = 26;
+            this.txtTotalHarga.TextChanged += new System.EventHandler(this.txtTotalHarga_TextChanged);
             // 
             // label8
             // 
@@ -187,6 +224,7 @@
             this.cmbJenisService.Name = "cmbJenisService";
             this.cmbJenisService.Size = new System.Drawing.Size(191, 21);
             this.cmbJenisService.TabIndex = 21;
+            this.cmbJenisService.SelectedIndexChanged += new System.EventHandler(this.cmbJenisService_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -278,46 +316,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nama Pelanggan";
             // 
-            // txtNoHP
-            // 
-            this.txtNoHP.Location = new System.Drawing.Point(155, 256);
-            this.txtNoHP.Name = "txtNoHP";
-            this.txtNoHP.Size = new System.Drawing.Size(192, 20);
-            this.txtNoHP.TabIndex = 37;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(20, 263);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "No. HP";
-            // 
-            // rdoMenyusul
-            // 
-            this.rdoMenyusul.AutoSize = true;
-            this.rdoMenyusul.Location = new System.Drawing.Point(570, 119);
-            this.rdoMenyusul.Name = "rdoMenyusul";
-            this.rdoMenyusul.Size = new System.Drawing.Size(70, 17);
-            this.rdoMenyusul.TabIndex = 38;
-            this.rdoMenyusul.TabStop = true;
-            this.rdoMenyusul.Text = "Menyusul";
-            this.rdoMenyusul.UseVisualStyleBackColor = true;
-            // 
-            // btnKembali
-            // 
-            this.btnKembali.Location = new System.Drawing.Point(202, 390);
-            this.btnKembali.Name = "btnKembali";
-            this.btnKembali.Size = new System.Drawing.Size(105, 30);
-            this.btnKembali.TabIndex = 39;
-            this.btnKembali.Text = "Kembali";
-            this.btnKembali.UseVisualStyleBackColor = true;
-            // 
             // InputTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::LaundryApp.Properties.Resources.Cream_Green_Abstract_Blank_Template_Instagram_Story;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);

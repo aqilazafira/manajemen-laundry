@@ -30,5 +30,10 @@ namespace LaundryApp.view
             this.Hide();
             fr.Show();
         }
+
+        private void FormHome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

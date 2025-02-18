@@ -50,3 +50,19 @@ C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\Laundr
 C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.csproj.Up2Date
 C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.exe
 C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.pdb
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.csproj.AssemblyReference.cache
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.Properties.Resources.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.DataPelanggan.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.FormHome.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.DataTransaksi.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.FormLogin.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.FormRegister.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.InputPelanggan.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.InputTransaksi.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.Main.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.PenyelesaianTransaksi.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.view.StartUp.resources
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.csproj.GenerateResource.cache
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.csproj.CoreCompileInputs.cache
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.exe
+C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.pdb

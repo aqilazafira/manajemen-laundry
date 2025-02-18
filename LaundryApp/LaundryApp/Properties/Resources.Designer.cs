@@ -73,9 +73,49 @@ namespace LaundryApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Biru_Estetis_Logo_Laundry_Kiloan {
+            get {
+                object obj = ResourceManager.GetObject("Biru Estetis Logo Laundry Kiloan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cream_Green_Abstract_Blank_Template_Instagram_Story {
+            get {
+                object obj = ResourceManager.GetObject("Cream Green Abstract Blank Template Instagram Story", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap start_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("start-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_and_Blue_Flat_Illustrative_Laundry_Logo {
+            get {
+                object obj = ResourceManager.GetObject("White and Blue Flat Illustrative Laundry Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_and_Blue_Flat_Illustrative_Laundry_Logo__1_ {
+            get {
+                object obj = ResourceManager.GetObject("White and Blue Flat Illustrative Laundry Logo (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -121,7 +121,19 @@
   <data name="start-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\start-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Biru Estetis Logo Laundry Kiloan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Biru Estetis Logo Laundry Kiloan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cream Green Abstract Blank Template Instagram Story" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cream Green Abstract Blank Template Instagram Story.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White and Blue Flat Illustrative Laundry Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White and Blue Flat Illustrative Laundry Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White and Blue Flat Illustrative Laundry Logo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White and Blue Flat Illustrative Laundry Logo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

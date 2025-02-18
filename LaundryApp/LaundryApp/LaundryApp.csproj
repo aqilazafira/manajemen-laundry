@@ -220,12 +220,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Biru Estetis Logo Laundry Kiloan.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\start-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White and Blue Flat Illustrative Laundry Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cream Green Abstract Blank Template Instagram Story.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White and Blue Flat Illustrative Laundry Logo %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
