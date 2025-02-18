@@ -30,6 +30,8 @@
         {
             this.dataGridViewTransaksi = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxIdPelanggan = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtCariData = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnKembali = new System.Windows.Forms.Button();
@@ -40,7 +42,7 @@
             this.rdoCash = new System.Windows.Forms.RadioButton();
             this.dtpTanggalSelesai = new System.Windows.Forms.DateTimePicker();
             this.dtpTanggalMasuk = new System.Windows.Forms.DateTimePicker();
-            this.textBoxTotalHarga = new System.Windows.Forms.TextBox();
+            this.txtTotalHarga = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.chkHanger = new System.Windows.Forms.CheckBox();
             this.chkSetrikaUap = new System.Windows.Forms.CheckBox();
@@ -70,9 +72,12 @@
             this.dataGridViewTransaksi.RowHeadersWidth = 62;
             this.dataGridViewTransaksi.Size = new System.Drawing.Size(776, 205);
             this.dataGridViewTransaksi.TabIndex = 0;
+            this.dataGridViewTransaksi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTransaksi_CellClick);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxIdPelanggan);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtCariData);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.btnKembali);
@@ -83,7 +88,7 @@
             this.groupBox1.Controls.Add(this.rdoCash);
             this.groupBox1.Controls.Add(this.dtpTanggalSelesai);
             this.groupBox1.Controls.Add(this.dtpTanggalMasuk);
-            this.groupBox1.Controls.Add(this.textBoxTotalHarga);
+            this.groupBox1.Controls.Add(this.txtTotalHarga);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.chkHanger);
             this.groupBox1.Controls.Add(this.chkSetrikaUap);
@@ -108,12 +113,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detail";
             // 
+            // comboBoxIdPelanggan
+            // 
+            this.comboBoxIdPelanggan.FormattingEnabled = true;
+            this.comboBoxIdPelanggan.Location = new System.Drawing.Point(101, 20);
+            this.comboBoxIdPelanggan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxIdPelanggan.Name = "comboBoxIdPelanggan";
+            this.comboBoxIdPelanggan.Size = new System.Drawing.Size(192, 21);
+            this.comboBoxIdPelanggan.TabIndex = 43;
+            this.comboBoxIdPelanggan.SelectedIndexChanged += new System.EventHandler(this.comboBoxIdPelanggan_SelectedIndexChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 21);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 13);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "ID Pelanggan";
+            // 
             // txtCariData
             // 
             this.txtCariData.Location = new System.Drawing.Point(339, 196);
             this.txtCariData.Name = "txtCariData";
             this.txtCariData.Size = new System.Drawing.Size(192, 20);
             this.txtCariData.TabIndex = 41;
+            this.txtCariData.TextChanged += new System.EventHandler(this.txtCariData_TextChanged);
             // 
             // label10
             // 
@@ -135,7 +160,7 @@
             // 
             // txtNoHP
             // 
-            this.txtNoHP.Location = new System.Drawing.Point(101, 143);
+            this.txtNoHP.Location = new System.Drawing.Point(101, 165);
             this.txtNoHP.Name = "txtNoHP";
             this.txtNoHP.Size = new System.Drawing.Size(192, 20);
             this.txtNoHP.TabIndex = 35;
@@ -143,7 +168,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 146);
+            this.label9.Location = new System.Drawing.Point(6, 168);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(42, 13);
             this.label9.TabIndex = 34;
@@ -196,12 +221,12 @@
             this.dtpTanggalMasuk.Size = new System.Drawing.Size(331, 20);
             this.dtpTanggalMasuk.TabIndex = 29;
             // 
-            // textBoxTotalHarga
+            // txtTotalHarga
             // 
-            this.textBoxTotalHarga.Location = new System.Drawing.Point(418, 139);
-            this.textBoxTotalHarga.Name = "textBoxTotalHarga";
-            this.textBoxTotalHarga.Size = new System.Drawing.Size(344, 20);
-            this.textBoxTotalHarga.TabIndex = 28;
+            this.txtTotalHarga.Location = new System.Drawing.Point(418, 139);
+            this.txtTotalHarga.Name = "txtTotalHarga";
+            this.txtTotalHarga.Size = new System.Drawing.Size(344, 20);
+            this.txtTotalHarga.TabIndex = 28;
             // 
             // label8
             // 
@@ -221,6 +246,7 @@
             this.chkHanger.TabIndex = 26;
             this.chkHanger.Text = "Hanger";
             this.chkHanger.UseVisualStyleBackColor = true;
+            this.chkHanger.CheckedChanged += new System.EventHandler(this.chkHanger_CheckedChanged);
             // 
             // chkSetrikaUap
             // 
@@ -231,6 +257,7 @@
             this.chkSetrikaUap.TabIndex = 25;
             this.chkSetrikaUap.Text = "Setrika Uap";
             this.chkSetrikaUap.UseVisualStyleBackColor = true;
+            this.chkSetrikaUap.CheckedChanged += new System.EventHandler(this.chkSetrikaUap_CheckedChanged);
             // 
             // cmbJenisService
             // 
@@ -242,6 +269,7 @@
             this.cmbJenisService.Name = "cmbJenisService";
             this.cmbJenisService.Size = new System.Drawing.Size(178, 21);
             this.cmbJenisService.TabIndex = 23;
+            this.cmbJenisService.SelectedIndexChanged += new System.EventHandler(this.cmbJenisService_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -255,7 +283,7 @@
             // lstJenisPakaian
             // 
             this.lstJenisPakaian.FormattingEnabled = true;
-            this.lstJenisPakaian.Location = new System.Drawing.Point(101, 47);
+            this.lstJenisPakaian.Location = new System.Drawing.Point(101, 69);
             this.lstJenisPakaian.Name = "lstJenisPakaian";
             this.lstJenisPakaian.Size = new System.Drawing.Size(192, 56);
             this.lstJenisPakaian.TabIndex = 20;
@@ -292,7 +320,7 @@
             // 
             // txtBeratTotal
             // 
-            this.txtBeratTotal.Location = new System.Drawing.Point(101, 113);
+            this.txtBeratTotal.Location = new System.Drawing.Point(101, 135);
             this.txtBeratTotal.Name = "txtBeratTotal";
             this.txtBeratTotal.Size = new System.Drawing.Size(192, 20);
             this.txtBeratTotal.TabIndex = 12;
@@ -300,7 +328,7 @@
             // 
             // txtNamaPelanggan
             // 
-            this.txtNamaPelanggan.Location = new System.Drawing.Point(101, 18);
+            this.txtNamaPelanggan.Location = new System.Drawing.Point(101, 44);
             this.txtNamaPelanggan.Name = "txtNamaPelanggan";
             this.txtNamaPelanggan.Size = new System.Drawing.Size(192, 20);
             this.txtNamaPelanggan.TabIndex = 10;
@@ -317,7 +345,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(342, 50);
+            this.label5.Location = new System.Drawing.Point(342, 47);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 13);
             this.label5.TabIndex = 7;
@@ -326,16 +354,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(342, 24);
+            this.label4.Location = new System.Drawing.Point(342, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Tanggal Masuk";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 116);
+            this.label3.Location = new System.Drawing.Point(6, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 5;
@@ -344,7 +373,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 47);
+            this.label2.Location = new System.Drawing.Point(6, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 4;
@@ -353,7 +382,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 21);
+            this.label1.Location = new System.Drawing.Point(6, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 13);
             this.label1.TabIndex = 0;
@@ -368,6 +397,7 @@
             this.ClientSize = new System.Drawing.Size(800, 487);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewTransaksi);
+            this.DoubleBuffered = true;
             this.Name = "DataTransaksi";
             this.Text = "Data Transaksi";
             this.Load += new System.EventHandler(this.DataTransaksi_Load);
@@ -398,7 +428,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox chkHanger;
         private System.Windows.Forms.CheckBox chkSetrikaUap;
-        private System.Windows.Forms.TextBox textBoxTotalHarga;
+        private System.Windows.Forms.TextBox txtTotalHarga;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RadioButton rdoTransfer;
         private System.Windows.Forms.RadioButton rdoCash;
@@ -410,5 +440,7 @@
         private System.Windows.Forms.Button btnKembali;
         private System.Windows.Forms.TextBox txtCariData;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBoxIdPelanggan;
+        private System.Windows.Forms.Label label11;
     }
 }

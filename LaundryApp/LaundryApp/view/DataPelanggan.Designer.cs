@@ -75,6 +75,7 @@
             this.txtCariData.Name = "txtCariData";
             this.txtCariData.Size = new System.Drawing.Size(192, 20);
             this.txtCariData.TabIndex = 43;
+            this.txtCariData.TextChanged += new System.EventHandler(this.txtCariData_TextChanged);
             // 
             // label10
             // 
@@ -125,6 +126,7 @@
             this.btnExport.TabIndex = 19;
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click_1);
             // 
             // btnRefresh
             // 

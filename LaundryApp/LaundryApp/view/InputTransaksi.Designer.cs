@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonKembali = new System.Windows.Forms.Button();
+            this.comboBoxIdPelanggan = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.btnKembali = new System.Windows.Forms.Button();
             this.rdoMenyusul = new System.Windows.Forms.RadioButton();
             this.txtNoHP = new System.Windows.Forms.TextBox();
@@ -59,6 +62,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.buttonKembali);
+            this.groupBox1.Controls.Add(this.comboBoxIdPelanggan);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.btnKembali);
             this.groupBox1.Controls.Add(this.rdoMenyusul);
             this.groupBox1.Controls.Add(this.txtNoHP);
@@ -91,9 +97,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Laundry";
             // 
+            // buttonKembali
+            // 
+            this.buttonKembali.Location = new System.Drawing.Point(205, 390);
+            this.buttonKembali.Name = "buttonKembali";
+            this.buttonKembali.Size = new System.Drawing.Size(105, 30);
+            this.buttonKembali.TabIndex = 42;
+            this.buttonKembali.Text = "Kembali";
+            this.buttonKembali.UseVisualStyleBackColor = true;
+            this.buttonKembali.Click += new System.EventHandler(this.buttonKembali_Click);
+            // 
+            // comboBoxIdPelanggan
+            // 
+            this.comboBoxIdPelanggan.FormattingEnabled = true;
+            this.comboBoxIdPelanggan.Location = new System.Drawing.Point(155, 25);
+            this.comboBoxIdPelanggan.Name = "comboBoxIdPelanggan";
+            this.comboBoxIdPelanggan.Size = new System.Drawing.Size(191, 21);
+            this.comboBoxIdPelanggan.TabIndex = 41;
+            this.comboBoxIdPelanggan.SelectedIndexChanged += new System.EventHandler(this.comboBoxIdPelanggan_SelectedIndexChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(20, 31);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 13);
+            this.label10.TabIndex = 40;
+            this.label10.Text = "ID Pelanggan";
+            // 
             // btnKembali
             // 
-            this.btnKembali.Location = new System.Drawing.Point(202, 390);
+            this.btnKembali.Location = new System.Drawing.Point(202, 417);
             this.btnKembali.Name = "btnKembali";
             this.btnKembali.Size = new System.Drawing.Size(105, 30);
             this.btnKembali.TabIndex = 39;
@@ -115,7 +149,7 @@
             // 
             this.txtNoHP.Location = new System.Drawing.Point(155, 256);
             this.txtNoHP.Name = "txtNoHP";
-            this.txtNoHP.Size = new System.Drawing.Size(192, 20);
+            this.txtNoHP.Size = new System.Drawing.Size(191, 20);
             this.txtNoHP.TabIndex = 37;
             // 
             // label9
@@ -158,14 +192,14 @@
             // 
             // dtpTanggalMasuk
             // 
-            this.dtpTanggalMasuk.Location = new System.Drawing.Point(570, 23);
+            this.dtpTanggalMasuk.Location = new System.Drawing.Point(570, 39);
             this.dtpTanggalMasuk.Name = "dtpTanggalMasuk";
             this.dtpTanggalMasuk.Size = new System.Drawing.Size(194, 20);
             this.dtpTanggalMasuk.TabIndex = 28;
             // 
             // txtNamaPelanggan
             // 
-            this.txtNamaPelanggan.Location = new System.Drawing.Point(155, 27);
+            this.txtNamaPelanggan.Location = new System.Drawing.Point(155, 53);
             this.txtNamaPelanggan.Name = "txtNamaPelanggan";
             this.txtNamaPelanggan.Size = new System.Drawing.Size(191, 20);
             this.txtNamaPelanggan.TabIndex = 27;
@@ -196,6 +230,7 @@
             this.chkHanger.TabIndex = 24;
             this.chkHanger.Text = "Hanger";
             this.chkHanger.UseVisualStyleBackColor = true;
+            this.chkHanger.CheckedChanged += new System.EventHandler(this.chkHanger_CheckedChanged);
             // 
             // chkSetrikaUap
             // 
@@ -206,10 +241,11 @@
             this.chkSetrikaUap.TabIndex = 23;
             this.chkSetrikaUap.Text = "Setrika Uap";
             this.chkSetrikaUap.UseVisualStyleBackColor = true;
+            this.chkSetrikaUap.CheckedChanged += new System.EventHandler(this.chkSetrikaUap_CheckedChanged);
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(470, 390);
+            this.btnReset.Location = new System.Drawing.Point(466, 390);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(105, 30);
             this.btnReset.TabIndex = 22;
@@ -239,14 +275,14 @@
             // 
             this.lstJenisPakaian.BackColor = System.Drawing.SystemColors.Window;
             this.lstJenisPakaian.FormattingEnabled = true;
-            this.lstJenisPakaian.Location = new System.Drawing.Point(155, 69);
+            this.lstJenisPakaian.Location = new System.Drawing.Point(155, 82);
             this.lstJenisPakaian.Name = "lstJenisPakaian";
             this.lstJenisPakaian.Size = new System.Drawing.Size(191, 134);
             this.lstJenisPakaian.TabIndex = 18;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(336, 390);
+            this.btnAdd.Location = new System.Drawing.Point(335, 390);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(105, 30);
             this.btnAdd.TabIndex = 17;
@@ -283,7 +319,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(436, 29);
+            this.label4.Location = new System.Drawing.Point(436, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 3;
@@ -301,7 +337,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 69);
+            this.label2.Location = new System.Drawing.Point(20, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 1;
@@ -310,7 +346,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 29);
+            this.label1.Location = new System.Drawing.Point(20, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 13);
             this.label1.TabIndex = 0;
@@ -324,6 +360,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Name = "InputTransaksi";
             this.Text = "Input Transaksi";
             this.Load += new System.EventHandler(this.Input_Load);
@@ -361,5 +398,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RadioButton rdoMenyusul;
         private System.Windows.Forms.Button btnKembali;
+        private System.Windows.Forms.ComboBox comboBoxIdPelanggan;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button buttonKembali;
     }
 }

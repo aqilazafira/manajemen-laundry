@@ -66,3 +66,13 @@ C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laund
 C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.csproj.CoreCompileInputs.cache
 C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.exe
 C:\Users\Aqila\Documents\SEMESTER 3\PEMOGRAMAN_II\KELOMPOK TUBES\manajemen-laundry\LaundryApp\LaundryApp\obj\Debug\LaundryApp.pdb
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\EPPlus.dll
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\System.Drawing.Common.dll
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\EPPlus.xml
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\System.Drawing.Common.pdb
+C:\Users\user\Documents\manajemen-laundry\LaundryApp\LaundryApp\bin\Debug\System.Drawing.Common.xml

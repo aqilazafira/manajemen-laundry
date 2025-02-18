@@ -33,6 +33,48 @@ namespace LaundryApp.controller
             return status;
         }
 
+        public bool Update(M_Pelanggan pelanggan, string id)
+        {
+            Boolean status = false;
+            try
+            {
+                koneksi.OpenConnection();
+                koneksi.ExecuteQuery("UPDATE t_pelanggan " +
+                    "(nama, nohp, tanggal_daftar) VALUES('" + pelanggan.Nama + "', '" +
+                    pelanggan.Nohp + "','" + pelanggan.Tanggal_daftar + "' WHERE id_pelanggan = '" + id + "'");
+
+                status = true;
+                MessageBox.Show("Data berhasil diubah", "Informasi",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                koneksi.CloseConnection();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Gagal Update", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return status;
+        }
+
+        public bool Delete(string id)
+        {
+            Boolean status = false;
+            try
+            {
+                koneksi.OpenConnection();
+                koneksi.ExecuteQuery("DELETE FROM t_pelanggan WHERE id_pelanggan = '" + id + "'");
+
+                status = true;
+                MessageBox.Show("Data berhasil dihapus", "Informasi",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                koneksi.CloseConnection();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Gagal Delete", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return status;
+        }
+
         public bool HandleInputPelanggan(string nama, string nohp, string tanggal_daftar)
         {
             if (string.IsNullOrWhiteSpace(nama) || string.IsNullOrWhiteSpace(nohp) || string.IsNullOrWhiteSpace(tanggal_daftar))

@@ -45,5 +45,12 @@ namespace LaundryApp.view
                 }
             }
         }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            FormHome home = new FormHome();
+            this.Hide();
+            home.Show();
+        }
     }
 }

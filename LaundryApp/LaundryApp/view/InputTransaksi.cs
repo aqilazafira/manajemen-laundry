@@ -1,4 +1,6 @@
 using LaundryApp.controller;
+using LaundryApp.model;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,29 +15,9 @@ namespace LaundryApp.view
 {
     public partial class InputTransaksi : Form
     {
-        Transaksi transaksiController = new Transaksi();
-
-        public InputTransaksi()
-        {
-            InitializeComponent();
-            SetupInitialControls();
-        }
-
-        private void SetupInitialControls()
-        {
-            // Setup Jenis Service ComboBox
-            cmbJenisService.Items.AddRange(new string[] {
-                "Cuci Basah",
-                "Cuci Kering",
-                "Cuci Setrika"
-            });
-
-            dtpTanggalMasuk.Value = DateTime.Now;
-            dtpTanggalSelesai.Value = DateTime.Now.AddDays(2);
-
-            txtBeratTotal.TextChanged += txtBeratTotal_TextChanged;
-            cmbJenisService.SelectedIndexChanged += cmbJenisService_SelectedIndexChanged;
-        }
+        Koneksi koneksi = new Koneksi();
+        M_Transaksi m_transaksi = new M_Transaksi();
+        string id_transaksi;
 
         private void Input_Load(object sender, EventArgs e)
         {
@@ -44,56 +26,44 @@ namespace LaundryApp.view
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (ValidateInput())
+            if (comboBoxIdPelanggan.Text == "" || lstJenisPakaian.Text == "" || dtpTanggalMasuk.Text == "" || dtpTanggalSelesai.Text == "" || (!rdoCash.Checked && !rdoMenyusul.Checked && !rdoTransfer.Checked) || cmbJenisService.SelectedIndex == -1 || txtTotalHarga.Text == "")
             {
-                string namaPelanggan = txtNamaPelanggan.Text;
-                string jenisPakaian = lstJenisPakaian.Text;
-                double beratTotal = double.Parse(txtBeratTotal.Text);
-                string jenisService = cmbJenisService.SelectedItem?.ToString() ?? "";
-                DateTime tanggalMasuk = dtpTanggalMasuk.Value;
-                DateTime tanggalSelesai = dtpTanggalSelesai.Value;
-                bool setrikaUap = chkSetrikaUap.Checked;
-                bool hanger = chkHanger.Checked;
-                string metodePembayaran = rdoCash.Checked ? "Cash" : "Transfer";
-                double totalHarga = double.Parse(txtTotalHarga.Text.Replace(",", ""));
-
-                bool status = transaksiController.HandleInputTransaksi(
-                    namaPelanggan, jenisPakaian, beratTotal, jenisService,
-                    tanggalMasuk, tanggalSelesai, setrikaUap, hanger,
-                    metodePembayaran, totalHarga);
-
-                if (status)
+                MessageBox.Show("Data tidak boleh kosong", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Transaksi transaksi = new Transaksi();
+                m_transaksi.Id_pelanggan = comboBoxIdPelanggan.Text;
+                m_transaksi.Jenis_pakaian = lstJenisPakaian.Text;
+                m_transaksi.Tanggal_masuk = dtpTanggalMasuk.ToString();
+                m_transaksi.Tanggal_selesai = dtpTanggalSelesai.ToString();
+                if (rdoCash.Checked)
                 {
-                    MessageBox.Show("Data berhasil ditambahkan!", "Informasi",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ResetForm();
+                    rdoMenyusul.Checked = false;
+                    rdoTransfer.Checked = false;
+                    m_transaksi.Metode_pembayaran = "Cash";
                 }
-            }
-        }
-        private bool ValidateInput()
-        {
-            if (string.IsNullOrWhiteSpace(txtBeratTotal.Text))
-            {
-                MessageBox.Show("Berat total harus diisi!", "Peringatan",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
+                else if (rdoMenyusul.Checked)
+                {
+                    rdoCash.Checked = false;
+                    rdoTransfer.Checked = false;
+                    m_transaksi.Metode_pembayaran = "Menyusul";
+                }
+                else if (rdoTransfer.Checked)
+                {
+                    rdoCash.Checked = false;
+                    rdoMenyusul.Checked = false;
+                    m_transaksi.Metode_pembayaran = "Transfer";
+                }
+                m_transaksi.Jenis_service = cmbJenisService.Text;
+                m_transaksi.Total_harga = txtTotalHarga.Text;
+                transaksi.Insert(m_transaksi);
 
-            if (cmbJenisService.SelectedIndex == -1)
-            {
-                MessageBox.Show("Pilih jenis service!", "Peringatan",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
+                ResetForm();
+                DataTransaksi dt = new DataTransaksi();
+                this.Hide();
+                dt.Show();
             }
-
-            if (!rdoCash.Checked && !rdoTransfer.Checked)
-            {
-                MessageBox.Show("Pilih metode pembayaran!", "Peringatan",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            return true;
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -102,68 +72,114 @@ namespace LaundryApp.view
         }
         private void ResetForm()
         {
-            txtNamaPelanggan.Clear();
-            lstJenisPakaian.ClearSelected();
-            txtBeratTotal.Clear();
+            comboBoxIdPelanggan.SelectedIndex = -1;
+            txtNamaPelanggan.Text = "";
+            lstJenisPakaian.Text = "";
+            txtBeratTotal.Text = "";
+            txtNoHP.Text = "";
+            dtpTanggalMasuk.Text = "";
+            dtpTanggalSelesai.Text = "";
+            rdoCash.Checked = false;
+            rdoMenyusul.Checked = false;
+            rdoTransfer.Checked = false;
             cmbJenisService.SelectedIndex = -1;
-            dtpTanggalMasuk.Value = DateTime.Now;
-            dtpTanggalSelesai.Value = DateTime.Now;
             chkSetrikaUap.Checked = false;
             chkHanger.Checked = false;
-            rdoCash.Checked = false;
-            rdoTransfer.Checked = false;
-            txtTotalHarga.Clear();
+            txtTotalHarga.Text = "";
+        }
+
+        public void getTotal()
+        {
+            if (int.TryParse(txtBeratTotal.Text, out int berat_total) && int.TryParse(cmbJenisService.Text, out int jenis_service))
+            {
+                int total = berat_total * jenis_service;
+                int setrika_uap = 5000;
+                int hanger = 5000;
+                if (chkSetrikaUap.Checked)
+                {
+                    int total_final = total + setrika_uap;
+                    txtTotalHarga.Text = total_final.ToString();
+                }
+                else if (chkHanger.Checked)
+                {
+                    int total_final = total + hanger;
+                    txtTotalHarga.Text = total_final.ToString();
+                }
+                else if (chkSetrikaUap.Checked && chkHanger.Checked)
+                {
+                    int total_final = total + setrika_uap + hanger;
+                    txtTotalHarga.Text = total_final.ToString();
+                }
+                else
+                {
+                    txtTotalHarga.Text = total.ToString();
+                }
+            }
+        }
+
+        public void getNamaPelanggan()
+        {
+            koneksi.OpenConnection();
+            MySqlDataReader reader = koneksi.reader("SELECT * FROM t_pelanggan WHERE id_pelanggan = '" + comboBoxIdPelanggan.Text + "'");
+            while (reader.Read())
+            {
+                string nama = reader.GetString("nama");
+                txtNamaPelanggan.Text = nama;
+            }
+            reader.Close();
+            koneksi.CloseConnection();
+        }
+
+        public void getNohp()
+        {
+            koneksi.OpenConnection();
+            MySqlDataReader reader = koneksi.reader("SELECT * FROM t_pelanggan WHERE id_pelanggan = '" + comboBoxIdPelanggan.Text + "'");
+            while (reader.Read())
+            {
+                int nohp = reader.GetInt32("nohp");
+                txtNoHP.Text = nohp.ToString();
+            }
+            reader.Close();
+            koneksi.CloseConnection();
         }
 
         private void txtBeratTotal_TextChanged(object sender, EventArgs e)
         {
-            CalculateTotalHarga();
+            getTotal();
         }
 
         private void cmbJenisService_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CalculateTotalHarga();
-        }
-
-        private void CalculateTotalHarga()
-        {
-            if (!double.TryParse(txtBeratTotal.Text, out double berat))
-                return;
-
-            double hargaPerKg = 0;
-
-            // Harga berdasarkan jenis service
-            if (cmbJenisService.SelectedItem != null)
-            {
-                switch (cmbJenisService.SelectedItem.ToString())
-                {
-                    case "Cuci Basah":
-                        hargaPerKg = 5000;
-                        break;
-                    case "Cuci Kering":
-                        hargaPerKg = 7000;
-                        break;
-                    case "Cuci Setrika":
-                        hargaPerKg = 10000;
-                        break;
-                }
-            }
-
-            double totalHarga = berat * hargaPerKg;
-
-            // Tambahan biaya untuk layanan tambahan
-            if (chkSetrikaUap.Checked)
-                totalHarga += berat * 3000; // Tambahan Rp 3.000/kg untuk setrika uap
-
-            if (chkHanger.Checked)
-                totalHarga += 2000; // Tambahan Rp 2.000 untuk hanger
-
-            txtTotalHarga.Text = totalHarga.ToString("N0");
+            getTotal();
         }
 
         private void txtTotalHarga_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBoxIdPelanggan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            getNamaPelanggan();
+            getNohp();
+        }
+
+        private void chkSetrikaUap_CheckedChanged(object sender, EventArgs e)
+        {
+            getTotal();
+        }
+
+        private void chkHanger_CheckedChanged(object sender, EventArgs e)
+        {
+            getTotal();
+        }
+
+        private void buttonKembali_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+            Main main = new Main();
+            this.Hide();
+            main.Show();
         }
     }
 }

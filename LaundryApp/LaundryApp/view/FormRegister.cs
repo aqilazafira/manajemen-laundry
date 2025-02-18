@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LaundryApp.controller;
+using LaundryApp.model;
 
 namespace LaundryApp.view
 {
     public partial class FormRegister : Form
     {
+        Koneksi koneksi = new Koneksi();
+        M_User m_user = new M_User(); 
+
         public FormRegister()
         {
             InitializeComponent();
@@ -28,6 +32,14 @@ namespace LaundryApp.view
          
         }
 
+        public void ResetForm()
+        {
+            txtUsername.Text = "";
+            txtEmail.Text = "";
+            txtPassword.Text = "";
+            txtRetypePassword.Text = "";
+        }
+
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             if (txtUsername.Text == "" || txtEmail.Text == "" || txtPassword.Text == "" || txtRetypePassword.Text == "")
@@ -40,33 +52,24 @@ namespace LaundryApp.view
             }
             else
             {
-                string username = txtUsername.Text;
-                string email = txtEmail.Text;
-                string password = txtPassword.Text;
-                string retypePassword = txtRetypePassword.Text;
+                CekRegister cekregister = new CekRegister();
+                m_user.Username = txtUsername.Text;
+                m_user.Email = txtEmail.Text;
+                m_user.Password = txtPassword.Text;
+                cekregister.Insert(m_user);
 
-                try
-                {
-                    Koneksi koneksi = new Koneksi();
-                    string query = "INSERT INTO Users (Username, Password, Email) VALUES (@Username, @Password, @Email)";
-                    var parameters = new Dictionary<string, object>
-                {
-                    { "@Username", username },
-                    { "@Password", password },
-                    { "@Email", email }
-                };
-
-                    koneksi.ExecuteQuery(query, parameters);
-                    MessageBox.Show("Registrasi berhasil.");
-                    FormLogin login = new FormLogin();
-                    this.Hide();
-                    login.Show();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Gagal Registrasi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                ResetForm();
+                FormLogin fl = new FormLogin();
+                this.Hide();
+                fl.Show();
             }
+        }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            FormHome home = new FormHome();
+            this.Hide();
+            home.Show();
         }
     }
 }

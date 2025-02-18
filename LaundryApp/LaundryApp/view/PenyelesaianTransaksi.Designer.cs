@@ -39,7 +39,7 @@
             this.rdoCash = new System.Windows.Forms.RadioButton();
             this.dtpTanggalSelesai = new System.Windows.Forms.DateTimePicker();
             this.dtpTanggalMasuk = new System.Windows.Forms.DateTimePicker();
-            this.textBoxTotalHarga = new System.Windows.Forms.TextBox();
+            this.txtTotalHarga = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.chkHanger = new System.Windows.Forms.CheckBox();
             this.chkSetrikaUap = new System.Windows.Forms.CheckBox();
@@ -58,12 +58,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewPenyelesaianTransaksi = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBoxIdPelanggan = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPenyelesaianTransaksi)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBoxIdPelanggan);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtCariData);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.btnKembali);
@@ -74,7 +78,7 @@
             this.groupBox1.Controls.Add(this.rdoCash);
             this.groupBox1.Controls.Add(this.dtpTanggalSelesai);
             this.groupBox1.Controls.Add(this.dtpTanggalMasuk);
-            this.groupBox1.Controls.Add(this.textBoxTotalHarga);
+            this.groupBox1.Controls.Add(this.txtTotalHarga);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.chkHanger);
             this.groupBox1.Controls.Add(this.chkSetrikaUap);
@@ -105,6 +109,7 @@
             this.txtCariData.Name = "txtCariData";
             this.txtCariData.Size = new System.Drawing.Size(192, 20);
             this.txtCariData.TabIndex = 43;
+            this.txtCariData.TextChanged += new System.EventHandler(this.txtCariData_TextChanged);
             // 
             // label10
             // 
@@ -126,7 +131,7 @@
             // 
             // txtNoHP
             // 
-            this.txtNoHP.Location = new System.Drawing.Point(101, 143);
+            this.txtNoHP.Location = new System.Drawing.Point(103, 170);
             this.txtNoHP.Name = "txtNoHP";
             this.txtNoHP.Size = new System.Drawing.Size(192, 20);
             this.txtNoHP.TabIndex = 35;
@@ -134,7 +139,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 146);
+            this.label9.Location = new System.Drawing.Point(8, 173);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(42, 13);
             this.label9.TabIndex = 34;
@@ -187,12 +192,12 @@
             this.dtpTanggalMasuk.Size = new System.Drawing.Size(331, 20);
             this.dtpTanggalMasuk.TabIndex = 29;
             // 
-            // textBoxTotalHarga
+            // txtTotalHarga
             // 
-            this.textBoxTotalHarga.Location = new System.Drawing.Point(418, 139);
-            this.textBoxTotalHarga.Name = "textBoxTotalHarga";
-            this.textBoxTotalHarga.Size = new System.Drawing.Size(344, 20);
-            this.textBoxTotalHarga.TabIndex = 28;
+            this.txtTotalHarga.Location = new System.Drawing.Point(418, 139);
+            this.txtTotalHarga.Name = "txtTotalHarga";
+            this.txtTotalHarga.Size = new System.Drawing.Size(344, 20);
+            this.txtTotalHarga.TabIndex = 28;
             // 
             // label8
             // 
@@ -212,6 +217,7 @@
             this.chkHanger.TabIndex = 26;
             this.chkHanger.Text = "Hanger";
             this.chkHanger.UseVisualStyleBackColor = true;
+            this.chkHanger.CheckedChanged += new System.EventHandler(this.chkHanger_CheckedChanged);
             // 
             // chkSetrikaUap
             // 
@@ -222,6 +228,7 @@
             this.chkSetrikaUap.TabIndex = 25;
             this.chkSetrikaUap.Text = "Setrika Uap";
             this.chkSetrikaUap.UseVisualStyleBackColor = true;
+            this.chkSetrikaUap.CheckedChanged += new System.EventHandler(this.chkSetrikaUap_CheckedChanged);
             // 
             // cmbJenisService
             // 
@@ -233,6 +240,7 @@
             this.cmbJenisService.Name = "cmbJenisService";
             this.cmbJenisService.Size = new System.Drawing.Size(178, 21);
             this.cmbJenisService.TabIndex = 23;
+            this.cmbJenisService.SelectedIndexChanged += new System.EventHandler(this.cmbJenisService_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -246,7 +254,7 @@
             // lstJenisPakaian
             // 
             this.lstJenisPakaian.FormattingEnabled = true;
-            this.lstJenisPakaian.Location = new System.Drawing.Point(101, 47);
+            this.lstJenisPakaian.Location = new System.Drawing.Point(103, 74);
             this.lstJenisPakaian.Name = "lstJenisPakaian";
             this.lstJenisPakaian.Size = new System.Drawing.Size(192, 56);
             this.lstJenisPakaian.TabIndex = 20;
@@ -268,6 +276,7 @@
             this.btnRefresh.TabIndex = 18;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnSelesaikan
             // 
@@ -280,14 +289,15 @@
             // 
             // txtBeratTotal
             // 
-            this.txtBeratTotal.Location = new System.Drawing.Point(101, 113);
+            this.txtBeratTotal.Location = new System.Drawing.Point(103, 140);
             this.txtBeratTotal.Name = "txtBeratTotal";
             this.txtBeratTotal.Size = new System.Drawing.Size(192, 20);
             this.txtBeratTotal.TabIndex = 12;
+            this.txtBeratTotal.TextChanged += new System.EventHandler(this.txtBeratTotal_TextChanged);
             // 
             // txtNamaPelanggan
             // 
-            this.txtNamaPelanggan.Location = new System.Drawing.Point(101, 18);
+            this.txtNamaPelanggan.Location = new System.Drawing.Point(103, 45);
             this.txtNamaPelanggan.Name = "txtNamaPelanggan";
             this.txtNamaPelanggan.Size = new System.Drawing.Size(192, 20);
             this.txtNamaPelanggan.TabIndex = 10;
@@ -304,7 +314,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(342, 50);
+            this.label5.Location = new System.Drawing.Point(342, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 13);
             this.label5.TabIndex = 7;
@@ -313,7 +323,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(342, 24);
+            this.label4.Location = new System.Drawing.Point(342, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 6;
@@ -322,7 +332,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 116);
+            this.label3.Location = new System.Drawing.Point(8, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 5;
@@ -331,7 +341,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 47);
+            this.label2.Location = new System.Drawing.Point(8, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 4;
@@ -340,7 +350,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 21);
+            this.label1.Location = new System.Drawing.Point(8, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 13);
             this.label1.TabIndex = 0;
@@ -354,6 +364,28 @@
             this.dataGridViewPenyelesaianTransaksi.RowHeadersWidth = 62;
             this.dataGridViewPenyelesaianTransaksi.Size = new System.Drawing.Size(776, 205);
             this.dataGridViewPenyelesaianTransaksi.TabIndex = 2;
+            this.dataGridViewPenyelesaianTransaksi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPenyelesaianTransaksi_CellClick);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(8, 23);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 13);
+            this.label11.TabIndex = 44;
+            this.label11.Text = "ID Pelanggan";
+            // 
+            // comboBoxIdPelanggan
+            // 
+            this.comboBoxIdPelanggan.FormattingEnabled = true;
+            this.comboBoxIdPelanggan.Items.AddRange(new object[] {
+            "Regular",
+            "Express"});
+            this.comboBoxIdPelanggan.Location = new System.Drawing.Point(103, 20);
+            this.comboBoxIdPelanggan.Name = "comboBoxIdPelanggan";
+            this.comboBoxIdPelanggan.Size = new System.Drawing.Size(192, 21);
+            this.comboBoxIdPelanggan.TabIndex = 45;
+            this.comboBoxIdPelanggan.SelectedIndexChanged += new System.EventHandler(this.comboBoxIdPelanggan_SelectedIndexChanged);
             // 
             // PenyelesaianTransaksi
             // 
@@ -386,7 +418,7 @@
         private System.Windows.Forms.RadioButton rdoCash;
         private System.Windows.Forms.DateTimePicker dtpTanggalSelesai;
         private System.Windows.Forms.DateTimePicker dtpTanggalMasuk;
-        private System.Windows.Forms.TextBox textBoxTotalHarga;
+        private System.Windows.Forms.TextBox txtTotalHarga;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox chkHanger;
         private System.Windows.Forms.CheckBox chkSetrikaUap;
@@ -407,5 +439,7 @@
         private System.Windows.Forms.DataGridView dataGridViewPenyelesaianTransaksi;
         private System.Windows.Forms.TextBox txtCariData;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBoxIdPelanggan;
+        private System.Windows.Forms.Label label11;
     }
 }
