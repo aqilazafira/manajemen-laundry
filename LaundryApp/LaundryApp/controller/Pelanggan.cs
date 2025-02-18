@@ -40,7 +40,7 @@ namespace LaundryApp.controller
             {
                 koneksi.OpenConnection();
                 koneksi.ExecuteQuery("UPDATE t_pelanggan " +
-                    "(nama, nohp, tanggal_daftar) VALUES('" + pelanggan.Nama + "', '" +
+                    "(nama, nohp, DATE_FORMAT(tanggal_daftar, 'yyyy-MM-dd')AS tanggal_daftar) VALUES('" + pelanggan.Nama + "', '" +
                     pelanggan.Nohp + "','" + pelanggan.Tanggal_daftar + "' WHERE id_pelanggan = '" + id + "'");
 
                 status = true;

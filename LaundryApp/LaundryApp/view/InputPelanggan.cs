@@ -40,7 +40,7 @@ namespace LaundryApp.view
                 Pelanggan pelanggan = new Pelanggan();
                 m_pelanggan.Nama = txtNamaPelanggan.Text;
                 m_pelanggan.Nohp = txtNoHP.Text;
-                m_pelanggan.Tanggal_daftar = dtpTanggalDaftar.ToString();
+                m_pelanggan.Tanggal_daftar = dtpTanggalDaftar.Value.ToString("yyyy-MM-dd");
                 pelanggan.Insert(m_pelanggan);
 
                 ResetForm();

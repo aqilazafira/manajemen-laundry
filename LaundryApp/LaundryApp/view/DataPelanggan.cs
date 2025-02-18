@@ -43,7 +43,7 @@ namespace LaundryApp.view
                 Pelanggan pelanggan = new Pelanggan();
                 m_pelanggan.Nama = txtNamaPelanggan.Text;
                 m_pelanggan.Nohp = txtNoHP.Text;
-                m_pelanggan.Tanggal_daftar = dtpTanggalDaftar.ToString();
+                m_pelanggan.Tanggal_daftar = dtpTanggalDaftar.Value.ToString("yyyy-MM-dd");
                 pelanggan.Update(m_pelanggan, id_pelanggan);
 
                 ResetForm();
@@ -53,42 +53,29 @@ namespace LaundryApp.view
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            // Konfirmasi penghapusan
-            var confirmResult = MessageBox.Show("Apakah Anda yakin ingin menghapus data ini?", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (confirmResult == DialogResult.Yes)
+            DialogResult pesan = MessageBox.Show(
+                "Apakah yakin akan menghapus data ini?",
+                "Perhatian",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (pesan == DialogResult.Yes)
             {
-                // Hapus data dari database atau list
-                MessageBox.Show("Data berhasil dihapus!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                RefreshData();
+                Pelanggan pelanggan = new Pelanggan();
+                pelanggan.Delete(id_pelanggan);
+                ResetForm();
+                Tampil();
             }
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            RefreshData();
-        }
-
-        private void RefreshData()
-        {
-            // Logika untuk memuat data dari database atau list
-            MessageBox.Show("Data berhasil diperbarui!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ResetForm();
         }
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-            // Gunakan SaveFileDialog untuk memilih lokasi penyimpanan file
-            SaveFileDialog saveFileDialog = new SaveFileDialog
-            {
-                Filter = "CSV file (*.csv)|*.csv",
-                Title = "Export Data"
-            };
-
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                // Logika untuk menyimpan data ke file CSV
-                System.IO.File.WriteAllText(saveFileDialog.FileName, "Sample Data");
-                MessageBox.Show("Data berhasil diexport ke file!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            
         }
 
         public void Tampil()
@@ -108,7 +95,7 @@ namespace LaundryApp.view
 
         private void txtCariData_TextChanged(object sender, EventArgs e)
         {
-            dataGridViewPelanggan.DataSource = koneksi.ShowData("SELECT id_pelanggan, nama, nohp, tanggal_daftar FROM t_pelanggan WHERE id_pelanggan LIKE '%" + txtCariData.Text + "%' OR nama LIKE '%" + txtCariData.Text + "%' OR nohp LIKE '%" + txtCariData.Text + "%' OR tanggal_daftar LIKE '%");
+            dataGridViewPelanggan.DataSource = koneksi.ShowData("SELECT id_pelanggan, nama, nohp, DATE_FORMAT(tanggal_daftar, 'yyyy-MM-dd') AS tanggal_daftar FROM t_pelanggan WHERE id_pelanggan LIKE '%" + txtCariData.Text + "%' OR nama LIKE '%" + txtCariData.Text + "%' OR nohp LIKE '%" + txtCariData.Text + "%' OR tanggal_daftar LIKE '%");
         }
 
         private void btnExport_Click_1(object sender, EventArgs e)
@@ -139,6 +126,34 @@ namespace LaundryApp.view
                                 MessageBoxButtons.OK ,
                                 MessageBoxIcon.Information);
             }
+        }
+
+        private void dataGridViewPelanggan_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id_pelanggan = dataGridViewPelanggan.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtNamaPelanggan.Text = dataGridViewPelanggan.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtNoHP.Text = dataGridViewPelanggan.Rows[e.RowIndex].Cells[2].Value.ToString();
+            string dateString = dataGridViewPelanggan.Rows[e.RowIndex].Cells[3].Value?.ToString();
+
+            string[] formats = { "yyyy-MM-dd", "dd/MM/yyyy", "MM/dd/yyyy", "yyyyMMdd", "dd-MM-yyyy" };
+
+            if (DateTime.TryParseExact(dateString, formats, System.Globalization.CultureInfo.InvariantCulture,
+                                       System.Globalization.DateTimeStyles.None, out DateTime tanggalDaftar))
+            {
+                dtpTanggalDaftar.Value = tanggalDaftar;
+            }
+            else
+            {
+                MessageBox.Show("Invalid date format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+            Main main = new Main();
+            this.Hide();
+            main.Show();
         }
     }
 }

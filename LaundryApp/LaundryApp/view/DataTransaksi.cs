@@ -127,8 +127,8 @@ namespace LaundryApp.view
                 Transaksi transaksi = new Transaksi();
                 m_transaksi.Id_pelanggan = comboBoxIdPelanggan.Text;
                 m_transaksi.Jenis_pakaian = lstJenisPakaian.Text;
-                m_transaksi.Tanggal_masuk = dtpTanggalMasuk.ToString();
-                m_transaksi.Tanggal_selesai = dtpTanggalSelesai.ToString();
+                m_transaksi.Tanggal_masuk = dtpTanggalMasuk.Value.ToString("yyyy-MM-dd");
+                m_transaksi.Tanggal_selesai = dtpTanggalSelesai.Value.ToString("yyyy-MM-dd");
                 if (rdoCash.Checked)
                 {
                     rdoMenyusul.Checked = false;
