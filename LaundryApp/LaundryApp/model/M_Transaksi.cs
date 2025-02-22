@@ -8,14 +8,14 @@ namespace LaundryApp.model
 {
     internal class M_Transaksi
     {
-        string id_pelanggan, jenis_pakaian, berat_total, tanggal_masuk, tanggal_selesai, metode_pembayaran, jenis_service, setrika_uap, hanger, total_harga;
+        string id_pelanggan, jenis_pakaian, berat_total, tanggal_masuk, tanggal_selesai, metode_pembayaran, jenis_service, setrika_uap, hanger, total_harga, status_selesai;
 
         public M_Transaksi()
         {
 
         }
 
-        public M_Transaksi(string id_pelanggan, string jenis_pakaian, string berat_total, string tanggal_masuk, string tanggal_selesai, string metode_pembayaran, string jenis_service, string setrika_uap, string hanger, string total_harga)
+        public M_Transaksi(string id_pelanggan, string jenis_pakaian, string berat_total, string tanggal_masuk, string tanggal_selesai, string metode_pembayaran, string jenis_service, string setrika_uap, string hanger, string total_harga, string status_selesai)
         {
             this.Id_pelanggan = id_pelanggan;
             this.Jenis_pakaian = jenis_pakaian;
@@ -27,6 +27,7 @@ namespace LaundryApp.model
             this.Setrika_uap = setrika_uap;
             this.Hanger = hanger;
             this.Total_harga = total_harga;
+            this.Status_selesai = status_selesai;
         }
 
         public string Id_pelanggan { get => id_pelanggan; set => id_pelanggan = value; }
@@ -39,5 +40,6 @@ namespace LaundryApp.model
         public string Setrika_uap { get => setrika_uap; set => setrika_uap = value; }
         public string Hanger { get => hanger; set => hanger = value; }
         public string Total_harga { get => total_harga; set => total_harga = value; }
+        public string Status_selesai { get => status_selesai; set => status_selesai = value; }
     }
 }

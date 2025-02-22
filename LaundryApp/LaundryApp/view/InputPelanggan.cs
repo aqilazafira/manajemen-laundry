@@ -1,5 +1,6 @@
 ﻿using LaundryApp.controller;
 using LaundryApp.model;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -41,7 +41,7 @@ namespace LaundryApp.view
         {
             comboBoxIdPelanggan.SelectedIndex = -1;
             txtNamaPelanggan.Text = "";
-            lstJenisPakaian.Text = "";
+            txtJenisPakaian.Text = "";
             txtBeratTotal.Text = "";
             txtNoHP.Text = "";
             dtpTanggalMasuk.Value = DateTime.Now;
@@ -86,6 +86,14 @@ namespace LaundryApp.view
         {
             if (int.TryParse(txtBeratTotal.Text, out int berat_total) && int.TryParse(cmbJenisService.Text, out int jenis_service))
             {
+                if (cmbJenisService.Text == "Regular")
+                {
+                    jenis_service = 5000;
+                }
+                else if (cmbJenisService.Text == "Express")
+                {
+                    jenis_service = 10000;
+                }
                 int total = berat_total * jenis_service;
                 int setrika_uap = 5000;
                 int hanger = 5000;
@@ -118,7 +126,7 @@ namespace LaundryApp.view
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (comboBoxIdPelanggan.Text == "" || lstJenisPakaian.Text == "" || dtpTanggalMasuk.Text == "" || dtpTanggalSelesai.Text == "" || (!rdoCash.Checked && !rdoMenyusul.Checked && !rdoTransfer.Checked) || cmbJenisService.SelectedIndex == -1 || txtTotalHarga.Text == "")
+            if (comboBoxIdPelanggan.Text == "" || txtJenisPakaian.Text == "" || dtpTanggalMasuk.Text == "" || dtpTanggalSelesai.Text == "" || (!rdoCash.Checked && !rdoMenyusul.Checked && !rdoTransfer.Checked) || cmbJenisService.SelectedIndex == -1 || txtTotalHarga.Text == "")
             {
                 MessageBox.Show("Data tidak boleh kosong", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -126,7 +134,7 @@ namespace LaundryApp.view
             {
                 Transaksi transaksi = new Transaksi();
                 m_transaksi.Id_pelanggan = comboBoxIdPelanggan.Text;
-                m_transaksi.Jenis_pakaian = lstJenisPakaian.Text;
+                m_transaksi.Jenis_pakaian = txtJenisPakaian.Text;
                 m_transaksi.Tanggal_masuk = dtpTanggalMasuk.Value.ToString("yyyy-MM-dd");
                 m_transaksi.Tanggal_selesai = dtpTanggalSelesai.Value.ToString("yyyy-MM-dd");
                 if (rdoCash.Checked)
@@ -149,6 +157,7 @@ namespace LaundryApp.view
                 }
                 m_transaksi.Jenis_service = cmbJenisService.Text;
                 m_transaksi.Total_harga = txtTotalHarga.Text;
+                m_transaksi.Status_selesai = "Belum Selesai";
 
                 transaksi.Update(m_transaksi, id_transaksi);
 
@@ -186,7 +195,7 @@ namespace LaundryApp.view
 
         public void Tampil()
         {
-            dataGridViewTransaksi.DataSource = koneksi.ShowData("SELECT id_transaksi, t_pelanggan.id_pelanggan, jenis_pakaian, berat_total, DATE_FORMAT(tanggal_masuk, '%Y-%m-%d') AS tanggal_masuk, DATE_FORMAT(tanggal_selesai, '%Y-%m-%d') AS tanggal_selesai, metode_pembayaran, jenis_service, total_harga FROM t_transaksi JOIN t_pelanggan ON t_pelanggan.id_pelanggan = t_transaksi.id_pelanggan");
+            dataGridViewTransaksi.DataSource = koneksi.ShowData("SELECT id_transaksi, t_pelanggan.id_pelanggan, jenis_pakaian, berat_total, DATE_FORMAT(tanggal_masuk, '%Y-%m-%d') AS tanggal_masuk, DATE_FORMAT(tanggal_selesai, '%Y-%m-%d') AS tanggal_selesai, metode_pembayaran, jenis_service, setrika_uap, hanger, total_harga, status_selesai FROM t_transaksi JOIN t_pelanggan ON t_pelanggan.id_pelanggan = t_transaksi.id_pelanggan");
 
             dataGridViewTransaksi.Columns[0].HeaderText = "ID";
             dataGridViewTransaksi.Columns[1].HeaderText = "ID Pelanggan";
@@ -199,6 +208,7 @@ namespace LaundryApp.view
             dataGridViewTransaksi.Columns[8].HeaderText = "Setrika Uap";
             dataGridViewTransaksi.Columns[9].HeaderText = "Hanger";
             dataGridViewTransaksi.Columns[10].HeaderText = "Total Harga";
+            dataGridViewTransaksi.Columns[11].HeaderText = "Status Selesai";
 
             dataGridViewTransaksi.Columns[10].DefaultCellStyle.Format = "Rp ###,###";
         }
@@ -216,7 +226,7 @@ namespace LaundryApp.view
         {
             id_transaksi = dataGridViewTransaksi.Rows[e.RowIndex].Cells[0].Value.ToString();
             comboBoxIdPelanggan.Text = dataGridViewTransaksi.Rows[e.RowIndex].Cells[1].Value.ToString();
-            lstJenisPakaian.Text = dataGridViewTransaksi.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtJenisPakaian.Text = dataGridViewTransaksi.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtBeratTotal.Text = dataGridViewTransaksi.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtNoHP.Text = dataGridViewTransaksi.Rows[e.RowIndex].Cells[4].Value.ToString();
             dtpTanggalMasuk.Text = dataGridViewTransaksi.Rows[e.RowIndex].Cells[5].Value.ToString();
@@ -248,8 +258,8 @@ namespace LaundryApp.view
 
         private void txtCariData_TextChanged(object sender, EventArgs e)
         {
-            dataGridViewTransaksi.DataSource = koneksi.ShowData("SELECT id_transaksi, t_pelanggan.id_pelanggan, jenis_pakaian, berat_total, tanggal_masuk, tanggal_selesai, metode_pembayaran, jenis_service, total_harga FROM t_transaksi JOIN t_pelanggan ON t_pelanggan.id_pelanggan = t_transaksi.id_pelanggan " +
-                "WHERE id_transaksi LIKE '%" + txtCariData.Text + "%' OR t_pelanggan.id_pelanggan LIKE '%" + txtCariData.Text + "%' OR nama LIKE '%" + txtCariData.Text + "%' OR jenis_pakaian LIKE '%" + txtCariData.Text + "%' OR berat_total LIKE '%" + txtCariData.Text + "%' OR tanggal_masuk LIKE '%" + txtCariData.Text + "%' OR tanggal_selesai LIKE '%" + txtCariData.Text + "%' OR metode_pembayaran LIKE '%" + txtCariData.Text + "%' OR jenis_service LIKE '%" + txtCariData.Text + "%' OR total_harga LIKE '%" + txtCariData.Text + "%'");
+            dataGridViewTransaksi.DataSource = koneksi.ShowData("SELECT id_transaksi, t_pelanggan.id_pelanggan, jenis_pakaian, berat_total, tanggal_masuk, tanggal_selesai, metode_pembayaran, jenis_service, total_harga, status_selesai FROM t_transaksi JOIN t_pelanggan ON t_pelanggan.id_pelanggan = t_transaksi.id_pelanggan " +
+                "WHERE id_transaksi LIKE '%' " + txtCariData.Text + " '%' OR t_pelanggan.id_pelanggan LIKE '%' " + txtCariData.Text + " '%' OR nama LIKE '%' " + txtCariData.Text + " '%' OR jenis_pakaian LIKE '%' " + txtCariData.Text + " '%' OR berat_total LIKE '%' " + txtCariData.Text + " '%' OR tanggal_masuk LIKE '%' " + txtCariData.Text + " '%' OR tanggal_selesai LIKE '%' " + txtCariData.Text + " '%' OR metode_pembayaran LIKE '%' " + txtCariData.Text + " '%' OR jenis_service LIKE '%' " + txtCariData.Text + " '%' OR total_harga LIKE '%' " + txtCariData.Text + " '%' ");
         }
 
         private void comboBoxIdPelanggan_SelectedIndexChanged(object sender, EventArgs e)

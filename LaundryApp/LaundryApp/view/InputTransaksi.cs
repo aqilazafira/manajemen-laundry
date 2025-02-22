@@ -17,16 +17,19 @@ namespace LaundryApp.view
     {
         Koneksi koneksi = new Koneksi();
         M_Transaksi m_transaksi = new M_Transaksi();
-        string id_transaksi;
+
+        public InputTransaksi()
+        {
+            InitializeComponent();
+        }
 
         private void Input_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (comboBoxIdPelanggan.Text == "" || lstJenisPakaian.Text == "" || dtpTanggalMasuk.Text == "" || dtpTanggalSelesai.Text == "" || (!rdoCash.Checked && !rdoMenyusul.Checked && !rdoTransfer.Checked) || cmbJenisService.SelectedIndex == -1 || txtTotalHarga.Text == "")
+            if (comboBoxIdPelanggan.Text == "" || txtJenisPakaian.Text == "" || dtpTanggalMasuk.Text == "" || dtpTanggalSelesai.Text == "" || (!rdoCash.Checked && !rdoMenyusul.Checked && !rdoTransfer.Checked) || cmbJenisService.SelectedIndex == -1 || txtTotalHarga.Text == "")
             {
                 MessageBox.Show("Data tidak boleh kosong", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -34,7 +37,7 @@ namespace LaundryApp.view
             {
                 Transaksi transaksi = new Transaksi();
                 m_transaksi.Id_pelanggan = comboBoxIdPelanggan.Text;
-                m_transaksi.Jenis_pakaian = lstJenisPakaian.Text;
+                m_transaksi.Jenis_pakaian = txtJenisPakaian.Text;
                 m_transaksi.Tanggal_masuk = dtpTanggalMasuk.Value.ToString("yyyy-MM-dd");
                 m_transaksi.Tanggal_selesai = dtpTanggalSelesai.Value.ToString("yyyy-MM-dd");
                 if (rdoCash.Checked)
@@ -57,6 +60,7 @@ namespace LaundryApp.view
                 }
                 m_transaksi.Jenis_service = cmbJenisService.Text;
                 m_transaksi.Total_harga = txtTotalHarga.Text;
+                m_transaksi.Status_selesai = "Belum Selesai";
                 transaksi.Insert(m_transaksi);
 
                 ResetForm();
@@ -74,7 +78,7 @@ namespace LaundryApp.view
         {
             comboBoxIdPelanggan.SelectedIndex = -1;
             txtNamaPelanggan.Text = "";
-            lstJenisPakaian.Text = "";
+            txtJenisPakaian.Text = "";
             txtBeratTotal.Text = "";
             txtNoHP.Text = "";
             dtpTanggalMasuk.Value = DateTime.Now;
@@ -92,12 +96,20 @@ namespace LaundryApp.view
         {
             if (int.TryParse(txtBeratTotal.Text, out int berat_total) && int.TryParse(cmbJenisService.Text, out int jenis_service))
             {
+                if (cmbJenisService.Text == "Regular")
+                {
+                    jenis_service = 5000;
+                }
+                else if (cmbJenisService.Text == "Express")
+                {
+                    jenis_service = 10000;
+                }
                 int total = berat_total * jenis_service;
                 int setrika_uap = 5000;
                 int hanger = 5000;
-                if (chkSetrikaUap.Checked)
+                if (chkSetrikaUap.Checked && chkHanger.Checked)
                 {
-                    int total_final = total + setrika_uap;
+                    int total_final = total + setrika_uap + hanger;
                     txtTotalHarga.Text = total_final.ToString();
                 }
                 else if (chkHanger.Checked)
@@ -105,9 +117,9 @@ namespace LaundryApp.view
                     int total_final = total + hanger;
                     txtTotalHarga.Text = total_final.ToString();
                 }
-                else if (chkSetrikaUap.Checked && chkHanger.Checked)
+                else if (chkSetrikaUap.Checked)
                 {
-                    int total_final = total + setrika_uap + hanger;
+                    int total_final = total + setrika_uap;
                     txtTotalHarga.Text = total_final.ToString();
                 }
                 else

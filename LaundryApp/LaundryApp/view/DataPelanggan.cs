@@ -63,6 +63,8 @@ namespace LaundryApp.view
             {
                 Pelanggan pelanggan = new Pelanggan();
                 pelanggan.Delete(id_pelanggan);
+                MessageBox.Show(id_pelanggan, "Informasi",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ResetForm();
                 Tampil();
             }
@@ -95,7 +97,7 @@ namespace LaundryApp.view
 
         private void txtCariData_TextChanged(object sender, EventArgs e)
         {
-            dataGridViewPelanggan.DataSource = koneksi.ShowData("SELECT id_pelanggan, nama, nohp, DATE_FORMAT(tanggal_daftar, 'yyyy-MM-dd') AS tanggal_daftar FROM t_pelanggan WHERE id_pelanggan LIKE '%" + txtCariData.Text + "%' OR nama LIKE '%" + txtCariData.Text + "%' OR nohp LIKE '%" + txtCariData.Text + "%' OR tanggal_daftar LIKE '%");
+            dataGridViewPelanggan.DataSource = koneksi.ShowData("SELECT id_pelanggan, nama, nohp, DATE_FORMAT(tanggal_daftar, '%Y-%m-%d') AS tanggal_daftar FROM t_pelanggan WHERE id_pelanggan LIKE '%' '" + txtCariData.Text + "' '%' OR nama LIKE '%' '" + txtCariData.Text + "' '%' OR nohp LIKE '%' '" + txtCariData.Text + "' '%' OR tanggal_daftar LIKE '%' ");
         }
 
         private void btnExport_Click_1(object sender, EventArgs e)
@@ -134,6 +136,7 @@ namespace LaundryApp.view
             txtNamaPelanggan.Text = dataGridViewPelanggan.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtNoHP.Text = dataGridViewPelanggan.Rows[e.RowIndex].Cells[2].Value.ToString();
             string dateString = dataGridViewPelanggan.Rows[e.RowIndex].Cells[3].Value?.ToString();
+
 
             string[] formats = { "yyyy-MM-dd", "dd/MM/yyyy", "MM/dd/yyyy", "yyyyMMdd", "dd-MM-yyyy" };
 

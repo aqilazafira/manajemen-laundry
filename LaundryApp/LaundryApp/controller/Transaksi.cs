@@ -73,7 +73,7 @@ namespace LaundryApp.controller
             return status;
         }
 
-        public bool HandleInputTransaksi(string id_pelanggan, string jenis_pakaian, string berat_total, string tanggal_masuk, string tanggal_selesai, string metode_pembayaran, string jenis_service, string setrika_uap, string hanger, string total_harga)
+        public bool HandleInputTransaksi(string id_pelanggan, string jenis_pakaian, string berat_total, string tanggal_masuk, string tanggal_selesai, string metode_pembayaran, string jenis_service, string setrika_uap, string hanger, string total_harga, string status_selesai)
         {
             if (string.IsNullOrWhiteSpace(id_pelanggan) || string.IsNullOrWhiteSpace(jenis_pakaian) || string.IsNullOrWhiteSpace(berat_total) || string.IsNullOrWhiteSpace(tanggal_masuk) || string.IsNullOrWhiteSpace(tanggal_selesai) || string.IsNullOrWhiteSpace(metode_pembayaran) || string.IsNullOrWhiteSpace(jenis_service) || string.IsNullOrWhiteSpace(total_harga))
             {
@@ -81,7 +81,7 @@ namespace LaundryApp.controller
                 return false;
             }
 
-            M_Transaksi transaksi = new M_Transaksi(id_pelanggan, jenis_pakaian, berat_total, tanggal_masuk, tanggal_selesai, metode_pembayaran, jenis_service, setrika_uap, hanger, total_harga);
+            M_Transaksi transaksi = new M_Transaksi(id_pelanggan, jenis_pakaian, berat_total, tanggal_masuk, tanggal_selesai, metode_pembayaran, jenis_service, setrika_uap, hanger, total_harga, status_selesai);
             return Insert(transaksi);
         }
     }

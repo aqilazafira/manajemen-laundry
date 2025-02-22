@@ -3,88 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\datatransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\datatransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\datatransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\datatransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\datapelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\datapelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\datapelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\datapelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\inputtransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|c:\\users\\user\\documents\\manajemen-laundry\\laundryapp\\laundryapp\\view\\inputtransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\inputtransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\inputpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\inputpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\controller\\pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\controller\\pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\controller\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\controller\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\controller\\cekregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\controller\\cekregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\inputpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\inputpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\inputtransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\inputtransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|c:\\users\\user\\documents\\manajemen-laundry\\laundryapp\\laundryapp\\view\\penyelesaiantransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\penyelesaiantransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\datatransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\datatransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\datatransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\datatransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\model\\m_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\model\\m_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\inputtransaksi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\inputtransaksi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\model\\m_pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\model\\m_pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\datapelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\datapelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\model\\m_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\model\\m_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\controller\\koneksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\controller\\koneksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\controller\\ceklogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\controller\\ceklogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\inputpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\inputpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\controller\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\controller\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\datapelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\datapelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\inputpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\inputpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -95,24 +59,68 @@
       "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|c:\\users\\user\\documents\\manajemen-laundry\\laundryapp\\laundryapp\\view\\penyelesaiantransaksi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\penyelesaiantransaksi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\penyelesaiantransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\penyelesaiantransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\penyelesaiantransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\penyelesaiantransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\model\\m_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\model\\m_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\controller\\pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\controller\\pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\controller\\cekregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\controller\\cekregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\model\\m_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\model\\m_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\model\\m_pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\model\\m_pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\controller\\ceklogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\controller\\ceklogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\penyelesaiantransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|solutionrelative:laundryapp\\view\\penyelesaiantransaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3114564A-A0CE-4870-93AA-3AAC51A4C2CA}|LaundryApp\\LaundryApp.csproj|C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\laundryapp\\view\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,296 +134,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "M_User.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_User.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\model\\M_User.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_User.cs",
-              "RelativeToolTip": "LaundryApp\\model\\M_User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T05:20:24.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CekRegister.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\CekRegister.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\controller\\CekRegister.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\CekRegister.cs",
-              "RelativeToolTip": "LaundryApp\\controller\\CekRegister.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T05:19:35.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataTransaksi.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataTransaksi.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\DataTransaksi.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataTransaksi.cs",
-              "RelativeToolTip": "LaundryApp\\view\\DataTransaksi.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAqwNwAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:26:39.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormLogin.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormLogin.cs",
-              "RelativeToolTip": "LaundryApp\\view\\FormLogin.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAawDQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T20:09:17.131Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "FormRegister.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormRegister.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\FormRegister.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormRegister.cs",
-              "RelativeToolTip": "LaundryApp\\view\\FormRegister.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwD0AAAAvAAAAAAAAAA==",
+              "Title": "PenyelesaianTransaksi.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\PenyelesaianTransaksi.Designer.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\PenyelesaianTransaksi.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\PenyelesaianTransaksi.Designer.cs",
+              "RelativeToolTip": "LaundryApp\\view\\PenyelesaianTransaksi.Designer.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAiwIAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:26:18.056Z"
+              "WhenOpened": "2025-02-22T06:23:44.729Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Koneksi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Koneksi.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\controller\\Koneksi.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Koneksi.cs",
+              "RelativeToolTip": "LaundryApp\\controller\\Koneksi.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:03:45.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "InputPelanggan.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputPelanggan.cs",
               "RelativeDocumentMoniker": "LaundryApp\\view\\InputPelanggan.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputPelanggan.cs",
               "RelativeToolTip": "LaundryApp\\view\\InputPelanggan.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T11:09:59.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InputTransaksi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputTransaksi.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\InputTransaksi.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputTransaksi.cs [Design]",
-              "RelativeToolTip": "LaundryApp\\view\\InputTransaksi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T06:49:20.002Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "InputTransaksi.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputTransaksi.cs",
               "RelativeDocumentMoniker": "LaundryApp\\view\\InputTransaksi.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputTransaksi.cs",
               "RelativeToolTip": "LaundryApp\\view\\InputTransaksi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwCYAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAALsAAAAAAAAAAAAqwB8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T08:35:42.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Transaksi.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Transaksi.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\controller\\Transaksi.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Transaksi.cs",
-              "RelativeToolTip": "LaundryApp\\controller\\Transaksi.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAYwEcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T15:46:17.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataPelanggan.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataPelanggan.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\DataPelanggan.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataPelanggan.cs",
-              "RelativeToolTip": "LaundryApp\\view\\DataPelanggan.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwDkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:43:03.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataPelanggan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataPelanggan.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\DataPelanggan.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataPelanggan.cs [Design]",
-              "RelativeToolTip": "LaundryApp\\view\\DataPelanggan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T09:22:46.307Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FormHome.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormHome.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\FormHome.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormHome.cs",
-              "RelativeToolTip": "LaundryApp\\view\\FormHome.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAewCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:36:47.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FormHome.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormHome.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\FormHome.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormHome.cs [Design]",
-              "RelativeToolTip": "LaundryApp\\view\\FormHome.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T07:23:50.238Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "StartUp.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\StartUp.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\StartUp.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\StartUp.cs",
-              "RelativeToolTip": "LaundryApp\\view\\StartUp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T00:03:33.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\Main.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\Main.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\Main.cs [Design]",
-              "RelativeToolTip": "LaundryApp\\view\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T07:54:21.215Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InputPelanggan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputPelanggan.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\InputPelanggan.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputPelanggan.cs [Design]",
-              "RelativeToolTip": "LaundryApp\\view\\InputPelanggan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T09:20:14.188Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StartUp.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\StartUp.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\StartUp.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\StartUp.cs [Design]",
-              "RelativeToolTip": "LaundryApp\\view\\StartUp.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T06:05:52.643Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "FormLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormLogin.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormLogin.cs [Design]",
-              "RelativeToolTip": "LaundryApp\\view\\FormLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T06:45:36.279Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataTransaksi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataTransaksi.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\DataTransaksi.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataTransaksi.cs [Design]",
-              "RelativeToolTip": "LaundryApp\\view\\DataTransaksi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T06:45:27.779Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "M_Pelanggan.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_Pelanggan.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\model\\M_Pelanggan.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_Pelanggan.cs",
-              "RelativeToolTip": "LaundryApp\\model\\M_Pelanggan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T10:59:57.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\Program.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\Program.cs",
-              "RelativeToolTip": "LaundryApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T06:36:46.705Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Main.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\Main.Designer.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\view\\Main.Designer.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\Main.Designer.cs",
-              "RelativeToolTip": "LaundryApp\\view\\Main.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T10:54:04.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Pelanggan.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Pelanggan.cs",
-              "RelativeDocumentMoniker": "LaundryApp\\controller\\Pelanggan.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Pelanggan.cs",
-              "RelativeToolTip": "LaundryApp\\controller\\Pelanggan.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAuwCsAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T11:02:20.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 16,
               "Title": "PenyelesaianTransaksi.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\PenyelesaianTransaksi.cs",
               "RelativeDocumentMoniker": "LaundryApp\\view\\PenyelesaianTransaksi.cs",
@@ -427,45 +206,301 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
+              "Title": "DataTransaksi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataTransaksi.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\DataTransaksi.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataTransaksi.cs",
+              "RelativeToolTip": "LaundryApp\\view\\DataTransaksi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:26:39.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InputTransaksi.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputTransaksi.Designer.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\InputTransaksi.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputTransaksi.Designer.cs",
+              "RelativeToolTip": "LaundryApp\\view\\InputTransaksi.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T08:22:08.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataPelanggan.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataPelanggan.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\DataPelanggan.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataPelanggan.cs",
+              "RelativeToolTip": "LaundryApp\\view\\DataPelanggan.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAmwGMAAABDAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:43:03.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "M_User.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_User.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\model\\M_User.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_User.cs",
+              "RelativeToolTip": "LaundryApp\\model\\M_User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T05:20:24.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CekRegister.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\CekRegister.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\controller\\CekRegister.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\CekRegister.cs",
+              "RelativeToolTip": "LaundryApp\\controller\\CekRegister.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T05:19:35.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormLogin.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormLogin.cs",
+              "RelativeToolTip": "LaundryApp\\view\\FormLogin.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAASwDQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T20:09:17.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormRegister.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormRegister.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\FormRegister.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormRegister.cs",
+              "RelativeToolTip": "LaundryApp\\view\\FormRegister.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwD0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:26:18.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputTransaksi.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputTransaksi.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\InputTransaksi.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputTransaksi.cs [Design]",
+              "RelativeToolTip": "LaundryApp\\view\\InputTransaksi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T06:49:20.002Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Transaksi.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Transaksi.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\controller\\Transaksi.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Transaksi.cs",
+              "RelativeToolTip": "LaundryApp\\controller\\Transaksi.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEsAAAASAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:46:17.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataPelanggan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataPelanggan.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\DataPelanggan.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataPelanggan.cs [Design]",
+              "RelativeToolTip": "LaundryApp\\view\\DataPelanggan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T09:22:46.307Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FormHome.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormHome.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\FormHome.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormHome.cs",
+              "RelativeToolTip": "LaundryApp\\view\\FormHome.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAewCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:36:47.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FormHome.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormHome.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\FormHome.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormHome.cs [Design]",
+              "RelativeToolTip": "LaundryApp\\view\\FormHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T07:23:50.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\StartUp.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\StartUp.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\StartUp.cs",
+              "RelativeToolTip": "LaundryApp\\view\\StartUp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T00:03:33.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\Main.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\Main.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\Main.cs [Design]",
+              "RelativeToolTip": "LaundryApp\\view\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T07:54:21.215Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InputPelanggan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputPelanggan.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\InputPelanggan.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\InputPelanggan.cs [Design]",
+              "RelativeToolTip": "LaundryApp\\view\\InputPelanggan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T09:20:14.188Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StartUp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\StartUp.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\StartUp.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\StartUp.cs [Design]",
+              "RelativeToolTip": "LaundryApp\\view\\StartUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T06:05:52.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormLogin.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormLogin.cs [Design]",
+              "RelativeToolTip": "LaundryApp\\view\\FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T06:45:36.279Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataTransaksi.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataTransaksi.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\view\\DataTransaksi.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\DataTransaksi.cs [Design]",
+              "RelativeToolTip": "LaundryApp\\view\\DataTransaksi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T06:45:27.779Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "M_Pelanggan.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_Pelanggan.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\model\\M_Pelanggan.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_Pelanggan.cs",
+              "RelativeToolTip": "LaundryApp\\model\\M_Pelanggan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T10:59:57.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\Program.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\Program.cs",
+              "RelativeToolTip": "LaundryApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T06:36:46.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Pelanggan.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Pelanggan.cs",
+              "RelativeDocumentMoniker": "LaundryApp\\controller\\Pelanggan.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\Pelanggan.cs",
+              "RelativeToolTip": "LaundryApp\\controller\\Pelanggan.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAmwDkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:02:20.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "PenyelesaianTransaksi.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\PenyelesaianTransaksi.cs",
               "RelativeDocumentMoniker": "LaundryApp\\view\\PenyelesaianTransaksi.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\PenyelesaianTransaksi.cs",
               "RelativeToolTip": "LaundryApp\\view\\PenyelesaianTransaksi.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAIwHIAAAAOAQAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T16:50:13.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "M_Transaksi.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_Transaksi.cs",
               "RelativeDocumentMoniker": "LaundryApp\\model\\M_Transaksi.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\model\\M_Transaksi.cs",
               "RelativeToolTip": "LaundryApp\\model\\M_Transaksi.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwCUAAABbAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAwCoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T15:41:27.521Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 14,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\Main.cs",
               "RelativeDocumentMoniker": "LaundryApp\\view\\Main.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\Main.cs",
               "RelativeToolTip": "LaundryApp\\view\\Main.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAADwvzgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T09:39:03.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "CekLogin.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\controller\\CekLogin.cs",
               "RelativeDocumentMoniker": "LaundryApp\\controller\\CekLogin.cs",
@@ -477,14 +512,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 12,
               "Title": "FormRegister.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormRegister.cs",
               "RelativeDocumentMoniker": "LaundryApp\\view\\FormRegister.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\manajemen-laundry\\LaundryApp\\LaundryApp\\view\\FormRegister.cs [Design]",
               "RelativeToolTip": "LaundryApp\\view\\FormRegister.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T06:46:27.723Z"
+              "WhenOpened": "2025-01-29T06:46:27.723Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

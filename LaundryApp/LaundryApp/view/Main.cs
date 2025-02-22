@@ -19,9 +19,9 @@ namespace LaundryApp.view
 
         private void buttonInputTransaksi_Click(object sender, EventArgs e)
         {
-            InputTransaksi it = new InputTransaksi();
+            InputTransaksi inptr = new InputTransaksi();
             this.Hide();
-            it.Show();
+            inptr.Show();
         }
 
         private void buttonDataTransaksi_Click(object sender, EventArgs e)

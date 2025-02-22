@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
+        
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCariData = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             this.btnExport = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             this.btnUpdate = new System.Windows.Forms.Button();
             this.txtNamaPelanggan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,6 +48,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPelanggan)).BeginInit();
             this.SuspendLayout();
+
             // 
             // groupBox1
             // 
@@ -70,6 +73,7 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detail";
+
             // 
             // txtCariData
             // 
@@ -226,6 +230,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPelanggan)).EndInit();
             this.ResumeLayout(false);
+
 
         }
 
